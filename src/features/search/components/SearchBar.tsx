@@ -2,7 +2,10 @@ import React from "react";
 
 const SearchBar: React.FC = ()=>{
     return(
-        <div>Hello i am a search bar</div>
+        <div>
+            <input placeholder="Search"></input>
+            <button>Search</button>
+        </div>
     );
 }
 
