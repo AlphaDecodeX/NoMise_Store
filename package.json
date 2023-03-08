@@ -2,35 +2,50 @@
   "name": "nomise",
   "version": "1.0.0",
   "description": "A Store that can be used for your Business",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve",
-    "build": "webpack --mode production"
-  },
-  "keywords": [
-    "ECommerce",
-    "Store",
-    "Customizable",
-    "Personalized"
-  ],
-  "author": "Lovepreet Singh | https://www.linkedin.com/in/lpadx/",
-  "license": "ISC",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.14",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.2.7",
-    "typescript": "^4.9.5"
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "ts-loader": "^9.4.2",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.7",
     "webpack-dev-server": "^4.11.1"
   }
 }
