@@ -1,11 +1,14 @@
 import products from "../repository/sampleProducts";
-import { productCardFetchResponse } from "../utils/productResponse";
+import { productFetchResponse } from "../utils/productResponse";
 
 class ProductService {
     productService() {}
     
-    fetchProductCards(filter: string): productCardFetchResponse[] {
-        return products.filter(p => p.offer === filter);
+    fetchProductCards(filter?: string): productFetchResponse[] {
+        if(filter){
+            return products.filter(p => p.offer === filter);
+        }
+        return products;
     }
 }
 

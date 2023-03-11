@@ -1,4 +1,4 @@
-type productCardFetchResponse = {
+type productFetchResponse = {
     name: string, 
     description: string,
     price: number,
@@ -8,4 +8,4 @@ type productCardFetchResponse = {
     img: string
 };
 
-export {productCardFetchResponse};
+export {productFetchResponse};
