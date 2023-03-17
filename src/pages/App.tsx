@@ -1,4 +1,6 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Product from '../features/product/components/Product';
 import {Homepage, Props } from './Homepage';
 
 const App: React.FC = () => {
@@ -8,9 +10,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="App">
-    <Homepage {...props} />
-    </div>
+    <Routes>
+      <Route path="/" element = {<Homepage {...props} />}/>
+      <Route path="/product/:id" element = {<Product />}/>
+    </Routes>
+    
   );
 };
 

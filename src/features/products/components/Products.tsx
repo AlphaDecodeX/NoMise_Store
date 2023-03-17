@@ -8,17 +8,17 @@ type Props = {
 };
 
 const Products: React.FC<Props> = ({filter}) => {
-  const [products, setProducts]:any = useState([]);
+  const [products, setProducts] = useState<productFetchResponse[]>([]);
   let productService: ProductService = new ProductService();
   useEffect(()=>{
     setProducts(productService.fetchProductCards(filter))
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 ">
       {products.map((product: productFetchResponse) => (
         <div>
-          <ProductCard name={product.name} offer={product.offer} img={product.img}/>
+          <ProductCard name={product.name} offer={product.offer} img={product.img} external_id = {product.external_id} id={product.id}/>
         </div>
       ))}
     </div>
