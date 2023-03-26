@@ -10,6 +10,7 @@ const RatingStars: React.FC<RatingProps> = ({ value, onChange }) => {
 
   return (
     <div className="flex items-center">
+      Rating:
       {stars.map((star) => (
         <button
           key={star}
