@@ -4,6 +4,7 @@ import { ProductService } from "../../products/services/ProductService";
 import { productFetchResponse } from "../../products/utils/productResponse";
 import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
+import Specifications from "./Specifications";
 
 const Product: React.FC = () => {
   const { id } = useParams<{ id: string }>(); // Get the id parameter from the URL
@@ -22,13 +23,20 @@ const Product: React.FC = () => {
       console.log("Product is ", product);
     }
   }, [id, productService]);
+  
+  const specifications = {
+    "Dimensions": "10 x 20 x 5 cm",
+    "Weight": "250 grams",
+    "Material": "Plastic",
+    "Color": "Red",
+  };
 
   return (
     <div className="grid grid-cols-3 p-5">
       <div className="col-span-2 m-5">
         <div className="w-3/6 h-3/6">
           <img
-            src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81Y5k2JdsTL._SL1500_.jpg"
+            src={productToShow?.img}
             alt="Product Image"
           />
           {productToShow ? (
@@ -63,6 +71,7 @@ const Product: React.FC = () => {
           </button>
         </div>
       </div>
+      <Specifications specifications={specifications}/>
     </div>
   );
 };
