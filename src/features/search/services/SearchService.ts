@@ -9,7 +9,7 @@ class SearchService {
   }
 
   autoCompleteAndSuggest(inputValue: string): productFetchResponse[] {
-    const products: productFetchResponse[] = this.productService.fetchProductCards();
+    const products: productFetchResponse[] = this.productService.fetchAllProducts();
     const result = products.filter((p) => p.name.toLowerCase().startsWith(inputValue.toLowerCase()));
     return result;
   }

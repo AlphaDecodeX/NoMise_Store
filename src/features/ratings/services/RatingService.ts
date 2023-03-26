@@ -10,7 +10,7 @@ class RatingService{
     
 
     fetchRatings(productId: number): number{
-        const products: productFetchResponse[] = this.productService.fetchProductCards();
+        const products: productFetchResponse[] = this.productService.fetchAllProducts();
         const product:  productFetchResponse[] = products.filter(p => p.id==productId);
         return product[0].rating;
     }

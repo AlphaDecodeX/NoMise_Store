@@ -11,7 +11,7 @@ const Products: React.FC<Props> = ({filter}) => {
   const [products, setProducts] = useState<productFetchResponse[]>([]);
   let productService: ProductService = new ProductService();
   useEffect(()=>{
-    setProducts(productService.fetchProductCards(filter))
+    setProducts(productService.fetchProductByFilter(filter))
   }, []);
 
   return (
