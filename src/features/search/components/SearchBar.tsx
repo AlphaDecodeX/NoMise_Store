@@ -79,14 +79,14 @@ const SearchBar: React.FC<Props> = ({ className }) => {
       <input
         type="text"
         placeholder="Search"
-        className="p-2 rounded-l-lg border-2 border-r-0 border-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+        className="p-2 rounded-l-lg focus:outline-none"
         value={inputValue}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
       />
-      <button className="bg-purple-600 text-white px-4 py-2 rounded-r-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50" onClick={searchProduct}>
-        Search
-      </button>
+    <button className="common-button" onClick={searchProduct}>
+      Search
+    </button>
       
       {isDropdownVisible && (
         <div className="absolute top-full left-0 w-full bg-white border-2 border-gray-400 rounded-b-lg">

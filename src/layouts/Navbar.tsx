@@ -7,7 +7,7 @@ const NavBar: React.FC = ()=>{
     const classForLogo: string = "h-14 w-14 p-3";
     const classForSearchBar: string = "p-4";
     return(
-        <div className="flex bg-purple-500 justify-between">
+        <div className="flex bg-indigo-600	justify-between">
             <Logo imgUrl={imageUrl} className = {classForLogo}/>
             <SearchBar className = {classForSearchBar}/>
         </div>
