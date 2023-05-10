@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Product from '../features/product/components/Product';
-import {Homepage, Props } from './Homepage';
+import { Homepage, Props } from './Homepage';
+import Cart from '../features/cart/components/Cart';
 
 const App: React.FC = () => {
   const props: Props = {
@@ -10,11 +11,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <Routes>
-      <Route path="/" element = {<Homepage {...props} />}/>
-      <Route path="/product/:id" element = {<Product />}/>
-    </Routes>
-    
+    <div>
+      <Cart /> 
+      <Routes>
+        <Route path="/" element={<Homepage {...props} />} />
+        <Route path="/product/:externalId" element={<Product />} />
+      </Routes>
+    </div>
   );
 };
 

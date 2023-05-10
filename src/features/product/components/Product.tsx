@@ -5,25 +5,27 @@ import { productFetchResponse } from "../../products/utils/productResponse";
 import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
 import Specifications from "./Specifications";
+import { CartService } from "../../cart/services/cartService";
 
 const Product: React.FC = () => {
-  const { id } = useParams<{ id: string }>(); // Get the id parameter from the URL
+  const { externalId } = useParams<{ externalId: string }>(); // Get the id parameter from the URL
   const ratingService: RatingService = new RatingService();
   const productService = new ProductService();
-  var [productToShow, setProductToShow] = useState<productFetchResponse | null>(
+  const [productToShow, setProductToShow] = useState<productFetchResponse | null>(
     null
   );
+  const cartService: CartService = new CartService();
 
   useEffect(() => {
-    if (id) {
-      const product: productFetchResponse = productService.fetchProductById(
-        Number(id)
+    if (externalId) {
+      const product: productFetchResponse = productService.fetchProductByExternalId(
+        externalId
       )[0];
       setProductToShow(product);
       console.log("Product is ", product);
     }
-  }, [id, productService]);
-  
+  }, [externalId, productService]);
+
   const specifications = {
     "Dimensions": "10 x 20 x 5 cm",
     "Weight": "250 grams",
@@ -31,14 +33,17 @@ const Product: React.FC = () => {
     "Color": "Red",
   };
 
+  const addToCart = () => {
+    if (productToShow) {
+      cartService.addProductToCart(productToShow);
+    }
+  };
+
   return (
     <div className="grid grid-cols-3 p-5">
       <div className="col-span-2 m-5">
         <div className="w-3/6 h-3/6">
-          <img
-            src={productToShow?.img}
-            alt="Product Image"
-          />
+          <img src={productToShow?.img} alt="Product Image" />
           {productToShow ? (
             <RatingStars
               value={productToShow?.numberOfRatings}
@@ -66,12 +71,15 @@ const Product: React.FC = () => {
           <button className="bg-green-500 text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-600">
             Buy Now
           </button>
-          <button className="bg-gray-300 text-gray-800 py-2 px-6 rounded-lg font-semibold hover:bg-gray-400">
+          <button
+            className="bg-gray-300 text-gray-800 py-2 px-6 rounded-lg font-semibold hover:bg-gray-400"
+            onClick={addToCart}
+          >
             Add to Cart
           </button>
         </div>
       </div>
-      <Specifications specifications={specifications}/>
+      <Specifications specifications={specifications} />
     </div>
   );
 };

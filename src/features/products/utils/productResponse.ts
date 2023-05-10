@@ -7,7 +7,8 @@ type productFetchResponse = {
     offer: string,
     numberOfRatings: number, 
     img: string,
-    id: number 
+    id: number,
+    quantity: number 
 };
 
 export {productFetchResponse};

@@ -10,7 +10,8 @@ const products: productFetchResponse[] = [
         offer: "25% Off",
         numberOfRatings: 200,
         img: "https://www.lg.com/in/images/monitors/md07510590/32UN880-B-Thumb-350.jpg",
-        id: 1
+        id: 1,
+        quantity: 50
     },
     {
         external_id: "deddfde3-5452-427b-8d08-9547335f42a9",
@@ -21,7 +22,8 @@ const products: productFetchResponse[] = [
         offer: "25% Off",
         numberOfRatings: 200,
         img: "https://www.lg.com/in/images/monitors/md07510590/32UN880-B-Thumb-350.jpg",
-        id: 2 
+        id: 2,
+        quantity: 50 
     },
     {
         external_id: "1d8fcea5-a2ca-4a34-87ac-f581674b7ff3",
@@ -32,7 +34,8 @@ const products: productFetchResponse[] = [
         offer: "25% Off",
         numberOfRatings: 200,
         img: "https://m.media-amazon.com/images/I/71EP7F-yPKL._SX679_.jpg",
-        id: 3
+        id: 3,
+        quantity: 50
     },
     {
         external_id: "65b21457-9faa-4ca9-871e-767e331f5d5e",
@@ -43,7 +46,8 @@ const products: productFetchResponse[] = [
         offer: "25% Off",
         numberOfRatings: 200,
         img: "https://m.media-amazon.com/images/I/71EP7F-yPKL._SX679_.jpg",
-        id: 4
+        id: 4,
+        quantity: 50
     } ,
     {
         external_id: "42439b6c-1218-44eb-b161-251b2a069e92",
@@ -54,7 +58,8 @@ const products: productFetchResponse[] = [
         offer: "25% Off",
         numberOfRatings: 200,
         img: "https://m.media-amazon.com/images/I/71EP7F-yPKL._SX679_.jpg",
-        id: 5
+        id: 5,
+        quantity: 50
     }  
 ];
 

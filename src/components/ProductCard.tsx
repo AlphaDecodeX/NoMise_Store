@@ -10,8 +10,8 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ name, offer, img, external_id, id }) => {
-  return (
-    <Link to={`/product/${id}`}>
+  return(
+    <Link to={`/product/${external_id}`}>
       <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer">
         <img className="w-full h-56 object-cover" src={img} alt={name} />
         <div className="p-4">
