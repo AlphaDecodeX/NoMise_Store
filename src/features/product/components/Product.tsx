@@ -68,11 +68,11 @@ const Product: React.FC = () => {
           </div>
         ) : null}
         <div className="flex justify-between">
-          <button className="bg-green-500 text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-600">
+          <button className="common-button">
             Buy Now
           </button>
           <button
-            className="bg-gray-300 text-gray-800 py-2 px-6 rounded-lg font-semibold hover:bg-gray-400"
+            className="inverted-button"
             onClick={addToCart}
           >
             Add to Cart
