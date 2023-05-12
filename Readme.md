@@ -38,6 +38,8 @@ You can use this product as your E-Commerce Store where you'll get a lot of feat
 This project has been started while keeping beginners in focus. You will receive a detailed blog each time on the progress of the project and how it is going. Blogs will be much detailed on how and what are the changes made. It would be beginner-friendly, keeping in mind learning open-source and enterprise-level software development.
 - [Detailed Blogs on Whats and Hows of building NoMise, Beginner Friendly](Blogs.md)
 - [Join our Small Focused Group](https://chat.whatsapp.com/B7CwSOLkl8wIzLMn8GRNst)
+- Contribute to Backend:-
+  - [Inventory Service](https://github.com/AlphaDecodeX/nomise_inventory)
 
 - Branch Naming:-
   - While fixing anything, use branch name ```fix/navbarNotWorking```
