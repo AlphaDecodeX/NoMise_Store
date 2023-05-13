@@ -1,11 +1,18 @@
-import React, { useState } from "react";
-import addedProducts from "../repository/addedProducts";
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { productFetchResponse } from "../../products/utils/productResponse";
+import addedProducts from "../repository/addedProducts";
 
 const Cart: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cartItems, setCartItems] = useState<productFetchResponse[]>(addedProducts);
 
+  const cartItemsFromRedux = useSelector((state: any) => state.cart.cartItems);
+  const [cartItems, setCartItems] = useState<productFetchResponse[]>([]);
+  
+  useEffect(() => {
+    setCartItems(Array.from(cartItemsFromRedux));
+  }, [cartItemsFromRedux]);
+  
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };

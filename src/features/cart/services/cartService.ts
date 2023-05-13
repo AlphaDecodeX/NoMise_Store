@@ -1,13 +1,17 @@
+import { useDispatch } from "react-redux";
 import { productFetchResponse } from "../../products/utils/productResponse";
 import addedProducts from "../repository/addedProducts";
 
 class CartService{
   
+  private dispatch = useDispatch();
   cartService(){}    
-  
+   
   addProductToCart(product: productFetchResponse){
-    const isProductInCart = addedProducts.some((addedProduct) => (addedProduct.external_id === product.external_id))
-    isProductInCart ? console.log(`product with id: ${product.id} already in the cart`) : addedProducts.push(product);
+     this.dispatch({
+      type: "ADD_TO_CART",
+      payload: product
+     });
   } 
     removeProductFromCart(externalId: string) {
         const index = addedProducts.findIndex(
@@ -17,7 +21,6 @@ class CartService{
           addedProducts.splice(index, 1);
         }
     }
-
 }
 
 export {CartService};
