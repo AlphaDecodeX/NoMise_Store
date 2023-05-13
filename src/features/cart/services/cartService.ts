@@ -13,13 +13,11 @@ class CartService{
       payload: product
      });
   } 
-    removeProductFromCart(externalId: string) {
-        const index = addedProducts.findIndex(
-          (product) => product.external_id === externalId
-        );
-        if (index !== -1) {
-          addedProducts.splice(index, 1);
-        }
+    removeProductFromCart(product: productFetchResponse) {
+      this.dispatch({
+        type: "REMOVE_PRODUCT_FROM_CART",
+        payload: product
+       }); 
     }
 }
 

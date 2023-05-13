@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { productFetchResponse } from "../../products/utils/productResponse";
-import addedProducts from "../repository/addedProducts";
+import { CartService } from "../services/cartService";
 
 const Cart: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const cartItemsFromRedux = useSelector((state: any) => state.cart.cartItems);
   const [cartItems, setCartItems] = useState<productFetchResponse[]>([]);
-  
+  const cartService: CartService = new CartService();
   useEffect(() => {
     setCartItems(Array.from(cartItemsFromRedux));
-  }, [cartItemsFromRedux]);
+  }, [isCartOpen]);
   
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
@@ -30,7 +30,7 @@ const Cart: React.FC = () => {
       prevItems.map((item) =>
         item.id === productId && item.quantity > 1
           ? { ...item, quantity: item.quantity - 1 }
-          : item
+          : item 
       )
     );
   };
