@@ -15,10 +15,10 @@ const Products: React.FC<Props> = ({filter}) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 ">
+    <div className="flex-wrap m-a-10">
       {products.map((product: productFetchResponse) => (
         <div>
-          <ProductCard name={product.name} offer={product.offer} img={product.img} external_id = {product.external_id} id={product.id}/>
+          <ProductCard name={product.name} offer={product.offer} img={product.img} external_id = {product.external_id} id={product.id} price={product.price} rating={product.rating}/>
         </div>
       ))}
     </div>

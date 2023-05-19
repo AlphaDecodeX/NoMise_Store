@@ -8,7 +8,7 @@ type Props = {
 const Logo : React.FC<Props> = ({imgUrl, className})=>{
     return (
         <div className={className}>
-            <img src={imgUrl} alt="Logo" />
+            <img src={imgUrl} alt="Logo" width="27px"/>
         </div>
     );
 }
