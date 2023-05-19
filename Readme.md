@@ -40,6 +40,31 @@ This project has been started while keeping beginners in focus. You will receive
 - [Join our Small Focused Group](https://chat.whatsapp.com/B7CwSOLkl8wIzLMn8GRNst)
 - Contribute to Backend:-
   - [Inventory Service](https://github.com/AlphaDecodeX/nomise_inventory)
+##Setting up the Project Locally
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/NoMise.git
+
+```
+2. Navigate to the project directory:
+```bash
+cd NoMise
+
+```
+3. Install the project dependencies:
+```bash
+npm install
+
+```
+4. Start the development server:
+```bash
+npm start
+
+```
+5. Open your web browser and visit http://localhost:3000 to see the application running.
 
 - Branch Naming:-
   - While fixing anything, use branch name ```fix/navbarNotWorking```
