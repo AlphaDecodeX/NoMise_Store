@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { productFetchResponse } from "../../products/utils/productResponse";
 import { CartService } from "../services/cartService";
+import "./Cart.css"
 
 const Cart: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -39,9 +40,9 @@ const Cart: React.FC = () => {
     <div className="fixed bottom-0 right-0 m-4 z-50">
       <button
         onClick={toggleCart}
-        className="bg-gray-800 text-white px-4 py-2 rounded-full"
+        className="medium-shadow bg-gray-800 text-white px-2 py-2 rounded-full"
       >
-        Open Cart
+        <img className="cart-image" src="https://www.citypng.com/public/uploads/preview/hd-shopping-cart-white-logo-icon-transparent-png-11640441682ecem2ohejv.png"/>
       </button>
       {isCartOpen && (
         <div className="absolute bottom-10 right-0 w-64 bg-white p-6 rounded-lg shadow-lg">
