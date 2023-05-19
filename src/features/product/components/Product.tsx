@@ -6,6 +6,7 @@ import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
 import Specifications from "./Specifications";
 import { CartService } from "../../cart/services/cartService";
+import { useDispatch } from "react-redux";
 
 const Product: React.FC = () => {
   const { externalId } = useParams<{ externalId: string }>(); // Get the id parameter from the URL
