@@ -6,6 +6,8 @@ import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
 import Specifications from "./Specifications";
 import { CartService } from "../../cart/services/cartService";
+import Razorpay from "razorpay";
+
 
 const Product: React.FC = () => {
   const { externalId } = useParams<{ externalId: string }>(); // Get the id parameter from the URL
@@ -15,6 +17,18 @@ const Product: React.FC = () => {
     null
   );
   const cartService: CartService = new CartService();
+
+  const razorpayInstance = new Razorpay({
+    key_id: "test",
+    key_secret: "test"
+  })
+
+  const options = {
+    amount:100,
+    currency: 'INR',
+    receipt: "321232",
+    payment_capture: true,
+  }
 
   useEffect(() => {
     if (externalId) {
@@ -32,6 +46,11 @@ const Product: React.FC = () => {
     "Material": "Plastic",
     "Color": "Red",
   };
+
+  const purchaseItem = async ()=>{
+    // const order = await razorpayInstance.orders.create(options);
+    // console.log('first', order);
+  }
 
   const addToCart = () => {
     if (productToShow) {
@@ -68,7 +87,7 @@ const Product: React.FC = () => {
           </div>
         ) : null}
         <div className="flex justify-between">
-          <button className="common-button">
+          <button className="common-button" onClick={purchaseItem}>
             Buy Now
           </button>
           <button
