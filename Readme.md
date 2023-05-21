@@ -1,12 +1,10 @@
 # NoMise: Your Customizable E-Commerce Store
 
 ## Tentative Tech Stack
+
 </br>
 
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat-square) ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square) ![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat-square) ![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&logoColor=white&style=flat-square) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat-square) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=flat-square) ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square) ![REST APIs](https://img.shields.io/badge/-REST_APIs-FF5733?logo=json&logoColor=white&style=flat-square)
-
-
-
 
 ## Table of Contents
 
@@ -36,6 +34,7 @@ You can use this product as your E-Commerce Store where you'll get a lot of feat
 ## Contributing
 
 This project has been started while keeping beginners in focus. You will receive a detailed blog each time on the progress of the project and how it is going. Blogs will be much detailed on how and what are the changes made. It would be beginner-friendly, keeping in mind learning open-source and enterprise-level software development.
+
 - [Detailed Blogs on Whats and Hows of building NoMise, Beginner Friendly](Blogs.md)
 - [Join our Small Focused Group](https://chat.whatsapp.com/B7CwSOLkl8wIzLMn8GRNst)
 - Contribute to Backend:-
@@ -43,34 +42,44 @@ This project has been started while keeping beginners in focus. You will receive
  
 ## Setting up the Project Locally
 
+
 To run the project locally, follow these steps:
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/your-username/NoMise.git
 
 ```
+
 2. Navigate to the project directory:
+
 ```bash
 cd NoMise
 
 ```
+
 3. Install the project dependencies:
+
 ```bash
 npm install
 
 ```
+
 4. Start the development server:
+
 ```bash
-npm start
+npm run dev
 
 ```
+
 5. Open your web browser and visit http://localhost:3000 to see the application running.
 
 - Branch Naming:-
-  - While fixing anything, use branch name ```fix/navbarNotWorking```
-  - While adding some feature, use branch name ```add/filterInSearchProducts```
-  - While doing testing and manual work, use branch name ```chore/addedTestsAndDoneTesting```
+  - While fixing anything, use branch name `fix/navbarNotWorking`
+  - While adding some feature, use branch name `add/filterInSearchProducts`
+  - While doing testing and manual work, use branch name `chore/addedTestsAndDoneTesting`
+
 ## License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
