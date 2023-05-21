@@ -9,9 +9,9 @@ class ProductService {
     }
     
     fetchProductByFilter(filter?: string): productFetchResponse[] {
-        if(filter){
-            return products.filter(p => p.offer === filter);
-        }
+        // if(filter){
+        //     return products.filter(p => p.offer === filter);
+        // }
         return products;
     }
 

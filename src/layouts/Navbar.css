@@ -1,0 +1,9 @@
+.nav-container{
+    /* border-bottom: 0.5px solid grey; */
+    border-bottom: 1px solid #ccc;
+    
+}
+.title{
+    font-weight: 500;
+    font-size: 19px;
+}

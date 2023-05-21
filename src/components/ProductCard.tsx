@@ -1,24 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./ProductCard.css"
 interface ProductCardProps {
   name: string;
   offer: string;
   img: string;
   external_id: string;
   id: number;
+  price:number;
+  rating:number;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ name, offer, img, external_id, id }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ name, offer, img, external_id, id ,price, rating}) => {
   return(
     <Link to={`/product/${external_id}`}>
-      <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer">
-        <img className="w-full h-56 object-cover" src={img} alt={name} />
-        <div className="p-4">
-          <h2 className="text-xl font-semibold mb-2">{name}</h2>
-          <p className="text-gray-700">{offer}</p>
+      <div className="card">
+        <img src={img} alt={name}/>
+        <h2 className="card-name">{name}</h2>
+        <p className="card-discount">
+          {offer} Off
+        </p>
+        <div className="space-between">
+          <div>
+            Rating: {rating}
+          </div>
+          <div>
+          Rs {price}/-
+          </div>
+            
         </div>
+        
       </div>
+
     </Link>
     
   );

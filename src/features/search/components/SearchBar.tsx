@@ -3,6 +3,7 @@ import { ProductService } from "../../products/services/ProductService";
 import SearchService from "../services/SearchService";
 import { productFetchResponse } from "../../products/utils/productResponse";
 import { Link, useNavigate } from "react-router-dom";
+import "./SearchBar.css"; 
 
 type Props = {
   className: string;
@@ -76,20 +77,16 @@ const SearchBar: React.FC<Props> = ({ className }) => {
 
   return (
     <div className={`relative ${className}`}>
-      <input
-        type="text"
-        placeholder="Search"
-        className="p-2 rounded-l-lg focus:outline-none"
-        value={inputValue}
+      <div className="joined-div p-r-5 m-r-5">
+                <i className="search-icon m-i-5 fa fa-search" onClick={searchProduct}></i>
+                <input placeholder="Search" className="search-input" value={inputValue}
         onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
-      />
-    <button className="common-button" onClick={searchProduct}>
-      Search
-    </button>
+        onKeyDown={handleKeyDown}></input>
+            </div>
+
       
       {isDropdownVisible && (
-        <div className="absolute top-full left-0 w-full bg-white border-2 border-gray-400 rounded-b-lg">
+        <div className="absolute overflow-auto	z-10 top-full left-0 h-screen w-full bg-white border-2 border-gray-400 rounded-b-lg">
           {searchResults.map((result, index) => (
             <div
               className={`px-2 py-1 cursor-pointer ${
