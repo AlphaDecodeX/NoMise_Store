@@ -18,5 +18,5 @@ const Homepage: React.FC<Props> = (props: Props) => {
 };
 
 export {
-    Homepage, Props
+    Homepage
 };
