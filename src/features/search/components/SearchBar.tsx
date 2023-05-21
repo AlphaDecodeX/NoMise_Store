@@ -3,15 +3,17 @@ import { ProductService } from "../../products/services/ProductService";
 import SearchService from "../services/SearchService";
 import { productFetchResponse } from "../../products/utils/productResponse";
 import { Link, useNavigate } from "react-router-dom";
-import "./SearchBar.css"; 
-
+import "./SearchBar.css";
+import "../../../pages/global.css";
 type Props = {
   className: string;
 };
 
 const SearchBar: React.FC<Props> = ({ className }) => {
   const [inputValue, setInputValue] = useState("");
-  const [searchResults, setSearchResults] = useState<productFetchResponse[]>([]);
+  const [searchResults, setSearchResults] = useState<productFetchResponse[]>(
+    []
+  );
   const [selectedItemIndex, setSelectedItemIndex] = useState(-1);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const searchService = new SearchService();
@@ -48,7 +50,10 @@ const SearchBar: React.FC<Props> = ({ className }) => {
         break;
       case "Enter":
         event.preventDefault();
-        if (selectedItemIndex >= 0 && selectedItemIndex < searchResults.length) {
+        if (
+          selectedItemIndex >= 0 &&
+          selectedItemIndex < searchResults.length
+        ) {
           setInputValue(searchResults[selectedItemIndex].name);
           setIsDropdownVisible(false);
         }
@@ -61,7 +66,9 @@ const SearchBar: React.FC<Props> = ({ className }) => {
   };
 
   const handleItemClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const index = parseInt(event.currentTarget.getAttribute("data-index") || "");
+    const index = parseInt(
+      event.currentTarget.getAttribute("data-index") || ""
+    );
     if (!isNaN(index)) {
       setInputValue(searchResults[index].name);
       setIsDropdownVisible(false);
@@ -78,13 +85,19 @@ const SearchBar: React.FC<Props> = ({ className }) => {
   return (
     <div className={`relative ${className}`}>
       <div className="joined-div p-r-5 m-r-5">
-                <i className="search-icon m-i-5 fa fa-search" onClick={searchProduct}></i>
-                <input placeholder="Search" className="search-input" value={inputValue}
-        onChange={handleInputChange}
-        onKeyDown={handleKeyDown}></input>
-            </div>
+        <input
+          placeholder="Search"
+          className="search-input"
+          value={inputValue}
+          onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
+        ></input>
 
-      
+        <button className="common-button" onClick={searchProduct}>
+          Search
+        </button>
+      </div>
+
       {isDropdownVisible && (
         <div className="absolute overflow-auto	z-10 top-full left-0 h-screen w-full bg-white border-2 border-gray-400 rounded-b-lg">
           {searchResults.map((result, index) => (
