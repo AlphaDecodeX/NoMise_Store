@@ -39,7 +39,9 @@ This project has been started while keeping beginners in focus. You will receive
 - [Join our Small Focused Group](https://chat.whatsapp.com/B7CwSOLkl8wIzLMn8GRNst)
 - Contribute to Backend:-
   - [Inventory Service](https://github.com/AlphaDecodeX/nomise_inventory)
-    ##Setting up the Project Locally
+ 
+## Setting up the Project Locally
+
 
 To run the project locally, follow these steps:
 
