@@ -1,5 +1,5 @@
 import actionType from "../../../services/actionType";
-import { productFetchResponse } from "../../products/utils/productResponse";
+import productFetchResponse from "../../products/utils/productResponse";
 
 const initialState = {
   cartItems: new Set(),

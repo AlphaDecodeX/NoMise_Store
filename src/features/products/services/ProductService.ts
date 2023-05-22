@@ -19,6 +19,10 @@ class ProductService {
         return products.filter(p => p.external_id === externalId); 
     }
 
+    fetchProductById(id: number){
+        return products.filter(p => p.id === id);
+    }
+
     fetchProductByName(name: string): productFetchResponse{
         return products.filter(p => p.name == name)[0];
     }

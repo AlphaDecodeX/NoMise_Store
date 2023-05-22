@@ -11,4 +11,4 @@ type productFetchResponse = {
     quantity: number 
 };
 
-export {productFetchResponse};
+export default productFetchResponse;

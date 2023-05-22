@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { productFetchResponse } from "../../products/utils/productResponse";
+import productFetchResponse from "../../products/utils/productResponse";
 import addedProducts from "../repository/addedProducts";
 
 class CartService{
