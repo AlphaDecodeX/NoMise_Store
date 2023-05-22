@@ -1,5 +1,5 @@
 import products from "../repository/sampleProducts";
-import { productFetchResponse } from "../utils/productResponse";
+import productFetchResponse from "../utils/productResponse";
 
 class ProductService {
     productService() {}

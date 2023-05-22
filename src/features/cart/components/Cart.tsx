@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { productFetchResponse } from "../../products/utils/productResponse";
+import productFetchResponse from "../../products/utils/productResponse";
 import { CartService } from "../services/cartService";
 import "./Cart.css"
 

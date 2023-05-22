@@ -1,5 +1,5 @@
 import { ProductService } from "../../products/services/ProductService";
-import {productFetchResponse} from "../../products/utils/productResponse"
+import productFetchResponse from "../../products/utils/productResponse"
 import * as fs from 'fs';
 // import * as jsonfile from 'jsonfile';
 class RatingService{

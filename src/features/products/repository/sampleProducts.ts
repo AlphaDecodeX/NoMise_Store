@@ -1,4 +1,4 @@
-import { productFetchResponse } from "../utils/productResponse";
+import productFetchResponse from "../utils/productResponse";
 
 const products: productFetchResponse[] = [
   {
