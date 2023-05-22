@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { ProductService } from "../../products/services/ProductService";
 import SearchService from "../services/SearchService";
-import { productFetchResponse } from "../../products/utils/productResponse";
-import { Link, useNavigate } from "react-router-dom";
+import productFetchResponse from "../../products/utils/productResponse";
+import {useNavigate } from "react-router-dom";
 import "./SearchBar.css";
 import "../../../pages/global.css";
 type Props = {

@@ -7,7 +7,7 @@ type Props = {
   img: string
 };
 
-const Homepage: React.FC<Props> = (props: Props) => {
+const Homepage: React.FC = () => {
 
   return (
     <div>
@@ -17,6 +17,4 @@ const Homepage: React.FC<Props> = (props: Props) => {
   );
 };
 
-export {
-    Homepage
-};
+export default Homepage;

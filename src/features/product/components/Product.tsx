@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ProductService } from "../../products/services/ProductService";
-import { productFetchResponse } from "../../products/utils/productResponse";
+import productFetchResponse from "../../products/utils/productResponse";
 import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
 import Specifications from "./Specifications";
 import { CartService } from "../../cart/services/cartService";
-import { useDispatch } from "react-redux";
 
 const Product: React.FC = () => {
   const { externalId } = useParams<{ externalId: string }>(); // Get the id parameter from the URL
