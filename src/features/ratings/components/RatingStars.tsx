@@ -9,7 +9,7 @@ const RatingStars: React.FC<RatingProps> = ({ value, onChange }) => {
   const stars = Array.from({ length: 5 }, (_, i) => i + 1);
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center text-white">
       Rating:
       {stars.map((star) => (
         <button

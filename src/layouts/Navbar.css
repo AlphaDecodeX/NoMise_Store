@@ -1,9 +1,8 @@
-.nav-container{
-    /* border-bottom: 0.5px solid grey; */
-    border-bottom: 1px solid #ccc;
-    
-}
 .title{
     font-weight: 500;
     font-size: 19px;
+}
+
+.navbar{
+    background: linear-gradient(to right, rgb(42, 148, 148), rgb(74, 60, 60));
 }

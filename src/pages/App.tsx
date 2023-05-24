@@ -7,7 +7,7 @@ import "./global.css"
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className='bg-gray-900'>
       <Cart /> 
       <Routes>
         <Route path="/" element={<Homepage/>} />

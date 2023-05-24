@@ -11,11 +11,6 @@ body{
 Flex
 ########## */
 
-.joined-div{
-    display: flex;
-    align-items: center;
-}
-
 .space-around{
     display: flex;
     justify-content: space-around;

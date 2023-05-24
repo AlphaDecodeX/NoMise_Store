@@ -26,6 +26,10 @@ class ProductService {
     fetchProductByName(name: string): productFetchResponse{
         return products.filter(p => p.name == name)[0];
     }
+
+    fetchProductByFilterType(filter: string): productFetchResponse[]{
+        return products.filter(p => p.filter == filter);
+    }
 }
 
 export {ProductService}

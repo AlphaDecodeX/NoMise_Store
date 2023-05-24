@@ -5,10 +5,10 @@ type Props = {
     className?: string
 }
 
-const Logo : React.FC<Props> = ({imgUrl, className})=>{
+const Logo: React.FC<Props> = ({imgUrl})=>{
     return (
-        <div className={className}>
-            <img src={imgUrl} alt="Logo" width="27px"/>
+        <div className="w-1/3">
+            <img src={imgUrl} alt="Logo" className="w-80"/>
         </div>
     );
 }
