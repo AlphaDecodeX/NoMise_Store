@@ -6,7 +6,6 @@ import Cart from '../features/cart/components/Cart';
 import "./global.css"
 
 const App: React.FC = () => {
-
   return (
     <div>
       <Cart /> 
