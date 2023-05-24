@@ -1,3 +1,5 @@
+![NoMise](https://github.com/AlphaDecodeX/NoMise_Store/assets/91979252/59bec95c-cc46-40e1-bee6-463a5ff397db)
+
 # NoMise: Your Customizable E-Commerce Store
 
 ## Tentative Tech Stack
