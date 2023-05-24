@@ -8,7 +8,8 @@ type productFetchResponse = {
     numberOfRatings: number, 
     img: string,
     id: number,
-    quantity: number 
+    quantity: number,
+    filter: string 
 };
 
 export default productFetchResponse;

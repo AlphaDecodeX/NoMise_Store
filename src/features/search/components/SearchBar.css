@@ -7,3 +7,11 @@
     color:#0076ff;
     cursor: pointer;
 }
+
+#dropdown{
+    height: 50%;
+    width: 30%;
+    overflow: scroll;
+    position: absolute;
+    margin-top: 5px;
+}

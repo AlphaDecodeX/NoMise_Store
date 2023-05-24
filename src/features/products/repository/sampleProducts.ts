@@ -11,7 +11,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1664429797/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247655_0_ixj0ae.png',
     id: 0,
-    quantity: 50
+    quantity: 50,
+    filter: "normal_deal"
   },
   {
     external_id: '1',
@@ -23,7 +24,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1664409740/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/257082_0_klwmql.png',
     id: 1,
-    quantity: 50
+    quantity: 50,
+    filter: "normal_deal"
   },
   {
     external_id: '2',
@@ -35,7 +37,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1673527158/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/250738_p6txsk.png',
     id: 2,
-    quantity: 50
+    quantity: 50,
+    filter: "normal_deal"
   },
   {
     external_id: '3',
@@ -47,7 +50,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1665442699/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/224037_0_idsddw.png',
     id: 3,
-    quantity: 50
+    quantity: 50,
+    filter: "normal_deal"
   },
   {
     external_id: '4',
@@ -59,7 +63,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1665443264/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/220804_0_o04sdx.png',
     id: 4,
-    quantity: 50
+    quantity: 50,
+    filter: "normal_deal"
   },
   {
     external_id: '5',
@@ -71,7 +76,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1681730234/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/272065_bwy1uo.png',
     id: 5,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '6',
@@ -83,7 +89,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1674047710/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/240186_0_q6156f.png',
     id: 6,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '7',
@@ -95,7 +102,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1674053945/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/251503_0_cqq8gj.png',
     id: 7,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '8',
@@ -107,7 +115,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1680168754/Croma%20Assets/Communication/Wearable%20Devices/Images/271286_ekluqo.png',
     id: 8,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '9',
@@ -119,7 +128,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675859301/Croma%20Assets/Communication/Chargers%20and%20Batteries/Images/230033_0_onjjbc.png',
     id: 9,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '10',
@@ -131,7 +141,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675241195/Croma%20Assets/Communication/PowerBank/Images/225673_td2dak.png',
     id: 10,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '11',
@@ -143,7 +154,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1681409441/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/220996_0_a7fm9l.png',
     id: 11,
-    quantity: 50
+    quantity: 50,
+    filter: "weekly_deal"
   },
   {
     external_id: '12',
@@ -155,7 +167,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675862116/Croma%20Assets/Communication/Chargers%20and%20Batteries/Images/228328_0_v0ucic.png',
     id: 12,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '13',
@@ -167,7 +180,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675863546/Croma%20Assets/Computers%20Peripherals/Cables%20and%20Connectors/Images/234704_0_v8pisw.png',
     id: 13,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '14',
@@ -179,7 +193,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1681402952/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/252054_0_gknwwu.png',
     id: 14,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '15',
@@ -191,7 +206,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675177052/Croma%20Assets/Communication/PowerBank/Images/253120_0_ejhops.png',
     id: 15,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '16',
@@ -203,7 +219,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675864183/Croma%20Assets/Computers%20Peripherals/Cables%20and%20Connectors/Images/255886_0_ddf2tc.png',
     id: 16,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '17',
@@ -215,7 +232,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675862804/Croma%20Assets/Communication/Chargers%20and%20Batteries/Images/251807_0_bvm8ou.png',
     id: 17,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   },
   {
     external_id: '18',
@@ -227,846 +245,8 @@ const products: productFetchResponse[] = [
     numberOfRatings: 200,
     img: 'https://media.croma.com/image/upload/v1675863520/Croma%20Assets/Computers%20Peripherals/Cables%20and%20Connectors/Images/234705_0_bzwunw.png',
     id: 18,
-    quantity: 50
-  },
-  {
-    external_id: '19',
-    name: 'Croma Laptop Stand For Laptop (Foldable Design, CRSP015AOC016515, Silver)',
-    description: 'Croma Laptop Stand For Laptop (Foldable Design, CRSP015AOC016515, Silver)',
-    price: 699,
-    rating: 5,
-    offer: '53%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1661163545/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/252045_e7d6o0.png',
-    id: 19,
-    quantity: 50},
-  {
-    external_id: '20',
-    name: 'Voltas Vectra 4 in 1 Convertible 1.3 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper Condenser, 163V Vectra Pearl)',
-    description: 'Voltas Vectra 4 in 1 Convertible 1.3 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper Condenser, 163V Vectra Pearl)',
-    price: 30990,
-    rating: 0,
-    offer: '49%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681446457/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/270260_0_oetbjg.png',
-    id: 20,
-    quantity: 50
-  },
-  {
-    external_id: '21',
-    name: 'Croma 4 in 1 Convertible 1 Ton 3 Star Inverter Split AC with Dust Filter (2023 Model, Copper Condenser, CRLA012IND283251)',
-    description: 'Croma 4 in 1 Convertible 1 Ton 3 Star Inverter Split AC with Dust Filter (2023 Model, Copper Condenser, CRLA012IND283251)',
-    price: 28490,
-    rating: 0,
-    offer: '25%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681476800/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/265345_exryuv.png',
-    id: 21,
-    quantity: 50
-  },
-  {
-    external_id: '22',
-    name: 'LG 6 in 1 Convertible 1.5 Ton 5 Star Inverter Split AC with 4 Way Swing (2023 Model, Copper Condenser, RS-Q19KNZE)',
-    description: 'LG 6 in 1 Convertible 1.5 Ton 5 Star Inverter Split AC with 4 Way Swing (2023 Model, Copper Condenser, RS-Q19KNZE)',
-    price: 44490,
-    rating: 0,
-    offer: '41%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1677846838/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/268607_0_hxb7si.png',
-    id: 22,
-    quantity: 50
-  },
-  {
-    external_id: '23',
-    name: 'Croma 1 Ton 2 Star Split AC (Copper Condenser, Dust Filter, CRLASA0123T0231)',
-    description: 'Croma 1 Ton 2 Star Split AC (Copper Condenser, Dust Filter, CRLASA0123T0231)',
-    price: 25990,
-    rating: 4,
-    offer: '26%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667484378/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/247080_ew2dbp.png',
-    id: 23,
-    quantity: 50
-  },
-  {
-    external_id: '24',
-    name: 'LG 6 in 1 Convertible 1 Ton 3 Star Dual Inverter Split AC (2023 Model, Copper Condenser, Clean and HD Filter, RS-Q12JNXE)',
-    description: 'LG 6 in 1 Convertible 1 Ton 3 Star Dual Inverter Split AC (2023 Model, Copper Condenser, Clean and HD Filter, RS-Q12JNXE)',
-    price: 31990,
-    rating: 0,
-    offer: '53%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1674878117/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/268595_k5nsje.png',
-    id: 24,
-    quantity: 50
-  },
-  {
-    external_id: '25',
-    name: 'Voltas Vectra 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti-Dust Filter (2023 Model, Copper Condenser, 183V Vectra Pearl Marvel)',
-    description: 'Voltas Vectra 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti-Dust Filter (2023 Model, Copper Condenser, 183V Vectra Pearl Marvel)',
-    price: 34990,
-    rating: 5,
-    offer: '46%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681447848/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/268310_0_reh0rw.png',
-    id: 25,
-    quantity: 50
-  },
-  {
-    external_id: '26',
-    name: 'Croma 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC withDust Filter (2023 Model, Copper Condenser, CRLA018IND283252)',
-    description: 'Croma 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Dust Filter (2023 Model, Copper Condenser, CRLA018IND283252)',
-    price: 31990,
-    rating: 0,
-    offer: '24%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681476795/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/265348_vok3dq.png',
-    id: 26,
-    quantity: 50
-  },
-  {
-    external_id: '27',
-    name: 'Daikin Standard Plus 1 Ton 3 Star Inverter Split AC (Copper Condenser, Dew Clean Technology, MTKL35U)',
-    description: 'Daikin Standard Plus 1 Ton 3 Star Inverter Split AC (Copper Condenser, Dew Clean Technology, MTKL35U)',
-    price: 32990,
-    rating: 0,
-    offer: '32%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681447590/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/267578_0_kuvf9j.png',
-    id: 27,
-    quantity: 50
-  },
-  {
-    external_id: '28',
-    name: 'Voltas Vertis 5 in 1 Convertible 1.5 Ton 5 Star Inverter Split AC with 4-Way Swing (2023 Model, Copper Condenser, 185V Vertis Emerald Marvel)',
-    description: 'Voltas Vertis 5 in 1 Convertible 1.5 Ton 5 Star Inverter Split AC with 4-Way Swing (2023 Model, Copper Condenser, 185V Vertis Emerald Marvel)',
-    price: 42490,
-    rating: 4,
-    offer: '46%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681446615/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/268337_0_ub3kts.png',
-    id: 28,
-    quantity: 50
-  },
-  {
-    external_id: '29',
-    name: 'Bosch 8 kg 5 Star Inverter Fully Automatic Front Load Washing Machine (Series 6, WAJ2846WIN, EcoSilence Drive, White)',
-    description: 'Bosch 8 kg 5 Star Inverter Fully Automatic Front Load Washing Machine (Series 6, WAJ2846WIN, EcoSilence Drive, White)',
-    price: 39380,
-    rating: 4.8,
-    offer: '30%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670591847/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/229018_0_qljdrb.png',
-    id: 29,
-    quantity: 50
-  },
-  {
-    external_id: '30',
-    name: 'Candy 6.5 kg 5 Star Fully Automatic Top Load Washing Machine (CTL651269S, Fuzzy Logic, Moon Silver)',
-    description: 'Candy 6.5 kg 5 Star Fully Automatic Top Load Washing Machine (CTL651269S, Fuzzy Logic, Moon Silver)',
-    price: 10494,
-    rating: 5,
-    offer: '30%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670591143/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/248076_0_vyw5if.png',
-    id: 30,
-    quantity: 50
-  },
-  {
-    external_id: '31',
-    name: 'Bosch 9/6 kg 5 Star Inverter Fully Automatic Front Load Washer Dryer (Series 4, WNA14400IN, Anti-Vibration Side Panel, White)',
-    description: 'Bosch 9/6 kg 5 Star Inverter Fully Automatic Front Load Washer Dryer (Series 4, WNA14400IN, Anti-Vibration Side Panel, White)',
-    price: 53800,
-    rating: 5,
-    offer: '31%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670588880/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/242865_0_uhtb54.png',
-    id: 31,
-    quantity: 50
-  },
-  {
-    external_id: '32',
-    name: 'LG 6.5 kg 5 Star Inverter Fully Automatic Top Load Washing Machine (T65SPSF2Z.ASFQEIL, Smart Inverter Technology, Middle Free Silver)',
-    description: 'LG 6.5 kg 5 Star Inverter Fully Automatic Top Load Washing Machine (T65SPSF2Z.ASFQEIL, Smart Inverter Technology, Middle Free Silver)',
-    price: 20494,
-    rating: 4.7,
-    offer: '27%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670593010/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/231572_0_s03bjz.png',
-    id: 32,
-    quantity: 50
-  },
-  {
-    external_id: '33',
-    name: 'IFB 8 kg 5 Star Fully Automatic Front Load Washing Machine (Senator WSS STEAM, Steam Wash Technology, Silver)',
-    description: 'IFB 8 kg 5 Star Fully Automatic Front Load Washing Machine (Senator WSS STEAM, Steam Wash Technology, Silver)',
-    price: 38990,
-    rating: 4.5,
-    offer: '15%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670592339/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/230345_0_fw3jgv.png',
-    id: 33,
-    quantity: 50
-  },
-  {
-    external_id: '34',
-    name: 'LG 7 kg 5 Star Inverter Fully Automatic Top Load Washing Machine (T70SJMB1Z.ABMQEIL, Smart Inverter Technology, Middle Black)',
-    description: 'LG 7 kg 5 Star Inverter Fully Automatic Top Load Washing Machine (T70SJMB1Z.ABMQEIL, Smart Inverter Technology, Middle Black)',
-    price: 22490,
-    rating: 4.6,
-    offer: '30%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1670591014/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/227726_0_gkibgz.png',
-    id: 34,
-    quantity: 50
-  },
-  {
-    external_id: '35',
-    name: 'HP 15s-dr3506TU Intel Core i3 11th Gen (15.6 inch, 8GB, 1TB and 256GB, Windows 11 Home, Intel UHD, FHD Display, Natural Silver, 6N038PA#ACJ)',
-    description: 'HP 15s-dr3506TU Intel Core i3 11th Gen (15.6 inch, 8GB, 1TB and 256GB, Windows 11 Home, Intel UHD, FHD Display, Natural Silver, 6N038PA#ACJ)',
-    price: 42130,
-    rating: 4.6,
-    offer: '22%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1683561746/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256496_0_h1fl4x.png',
-    id: 35,
-    quantity: 50
-  },
-  {
-    external_id: '36',
-    name: 'Dell Inspiron 3520 Intel Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11, MS Office 2021, Intel UMA, Full HD Display, Carbon Black, D560871WIN9B)',
-    description: 'Dell Inspiron 3520 Intel Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11, MS Office 2021, Intel UMA, Full HD Display, Carbon Black, D560871WIN9B)',
-    price: 56340,
-    rating: 4.6,
-    offer: '26%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1683556284/Croma%20Assets/Computers%20Peripherals/Laptop/Images/264017_0_sylqqy.png',
-    id: 36,
-    quantity: 50
-  },
-  {
-    external_id: '37',
-    name: 'HP Pavilion x360 14-dy0208TU Intel Core i3 11th Gen (14 inch, Touchscreen Convertible, 8GB, 512GB, Windows 11 Home, MS Office 2019, Intel UHD, IPS Display, Spruce Blue, 67G61PA#ACJ)',
-    description: 'HP Pavilion x360 14-dy0208TU Intel Core i3 11th Gen (14 inch, Touchscreen Convertible, 8GB, 512GB, Windows 11 Home, MS Office 2019, Intel UHD, IPS Display, Spruce Blue, 67G61PA#ACJ)',
-    price: 53400,
-    rating: 4.6,
-    offer: '23%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1666277581/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/257191_14_swffs3.png',
-    id: 37,
-    quantity: 50
-  },
-  {
-    external_id: '38',
-    name: 'HP Intel FR5007TU Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11, MS Office Home and Student 2021, Intel Iris Xe, Full HD IPS Display, Silver, 6P130PA#ACJ)',
-    description: 'HP Intel FR5007TU Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11, MS Office Home and Student 2021, Intel Iris Xe, Full HD IPS Display, Silver, 6P130PA#ACJ)',
-    price: 59490,
-    rating: 4.5,
-    offer: '13%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1683563138/Croma%20Assets/Computers%20Peripherals/Laptop/Images/259473_0_we0vzw.png',
-    id: 38,
-    quantity: 50
-  },
-  {
-    external_id: '39',
-    name: 'HP 15s-eq2143AU AMD Ryzen 3 (15.6 inch, 8GB, 512GB, Windows 11, MS Office 2019, AMD Radeon Graphics, FHD IPS Display, Natural Silver, 50M62PA#ACJ)',
-    description: 'HP 15s-eq2143AU AMD Ryzen 3 (15.6 inch, 8GB, 512GB, Windows 11, MS Office 2019, AMD Radeon Graphics, FHD IPS Display, Natural Silver, 50M62PA#ACJ)',
-    price: 39490,
-    rating: 4.4,
-    offer: '24%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664420326/Croma%20Assets/Computers%20Peripherals/Laptop/Images/248020_0_e52lla.png',
-    id: 39,
-    quantity: 50
-  },
-  {
-    external_id: '40',
-    name: 'Acer Aspire 5 Intel Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11 Home, NVIDIA GeForce RTX 2050, IPS Display, Grey, NX.K9TSI.001)',
-    description: 'Acer Aspire 5 Intel Core i5 12th Gen (15.6 inch, 8GB, 512GB, Windows 11 Home, NVIDIA GeForce RTX 2050, IPS Display, Grey, NX.K9TSI.001)',
-    price: 59999,
-    rating: 4.6,
-    offer: '27%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1666277428/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/256345_0_hccyqp.png',
-    id: 40,
-    quantity: 50
-  },
-  {
-    external_id: '41',
-    name: 'Acer Nitro 5 Intel Core i5 11th Gen (15.6 inch, 8GB, 512GB, Windows 11, NVIDIA GeForce GTX 1650 Graphics, FHD IPS Display, Black, NH.QEHSI.001)',
-    description: 'Acer Nitro 5 Intel Core i5 11th Gen (15.6 inch, 8GB, 512GB, Windows 11, NVIDIA GeForce GTX 1650 Graphics, FHD IPS Display, Black, NH.QEHSI.001)',
-    price: 58799,
-    rating: 4.1,
-    offer: '41%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1663413067/Croma%20Assets/Computers%20Peripherals/Laptop/Images/251774_0_kiuzjj.png',
-    id: 41,
-    quantity: 50
-  },
-  {
-    external_id: '42',
-    name: 'ASUS TUF Gaming F15 FX506LHB-HN355WS Intel Core i5 10th Gen (15.6 inch, 8GB, 512GB, Windows 11 Home, MS Office, NVIDIA GeForce GTX 1650, FHD IPS Display, Bonfire Black, 90NR03U2-M00CW0)',
-    description: 'ASUS TUF Gaming F15 FX506LHB-HN355WS Intel Core i5 10th Gen (15.6 inch, 8GB, 512GB, Windows 11 Home, MS Office, NVIDIA GeForce GTX 1650, FHD IPS Display, Bonfire Black, 90NR03U2-M00CW0)',
-    price: 56990,
-    rating: 4.7,
-    offer: '27%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664417481/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256263_0_hhjvoi.png',
-    id: 42,
-    quantity: 50
-  },
-  {
-    external_id: '43',
-    name: 'HP Victus 15-fa0092TX Intel Core i5 12th Gen (15.6 inch, 16GB, 512GB, Windows 11, MS Office 2021, NVIDIA GeForce RTX 3050, FHD Display, Performance Blue, 788X8PA#ACJ)',
-    description: 'HP Victus 15-fa0092TX Intel Core i5 12th Gen (15.6 inch, 16GB, 512GB, Windows 11, MS Office 2021, NVIDIA GeForce RTX 3050, FHD Display, Performance Blue, 788X8PA#ACJ)',
-    price: 76439.02,
-    rating: 4.6,
-    offer: '22%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1665060280/Croma%20Assets/Computers%20Peripherals/Laptop/Images/263373_nr7he1.png',
-    id: 43,
-    quantity: 50
-  },
-  {
-    external_id: '44',
-    name: 'Acer Aspire 5 A515-57G Intel Core i5 12th Gen (15.6 inch, 16GB, 512GB, Windows 11, MS Office 2021, NVIDIA RTX 2050, FHD IPS Display, Steel Gray, UN.K9TSI.003)',
-    description: 'Acer Aspire 5 A515-57G Intel Core i5 12th Gen (15.6 inch, 16GB, 512GB, Windows 11, MS Office 2021, NVIDIA RTX 2050, FHD IPS Display, Steel Gray, UN.K9TSI.003)',
-    price: 63999,
-    rating: 4.8,
-    offer: '28%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662553848/Croma%20Assets/Computers%20Peripherals/Laptop/Images/261170_u7tfva.png',
-    id: 44,
-    quantity: 50
-  },
-  {
-    external_id: '45',
-    name: 'realme Pad Mini Wi-Fi Android Tablet (8.7 Inch, 3GB RAM, 32GB ROM, Grey)',
-    description: 'realme Pad Mini Wi-Fi Android Tablet (8.7 Inch, 3GB RAM, 32GB ROM, Grey)',
-    price: 9999,
-    rating: 5,
-    offer: '44%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667848902/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/252981_0_y7ckgo.png',
-    id: 45,
-    quantity: 50
-  },
-  {
-    external_id: '46',
-    name: 'realme Pad Mini Wi-Fi + 4G Android Tablet (8.7 Inch, 3GB RAM, 32GB ROM, Blue)',
-    description: 'realme Pad Mini Wi-Fi + 4G Android Tablet (8.7 Inch, 3GB RAM, 32GB ROM, Blue)',
-    price: 11999,
-    rating: 5,
-    offer: '45%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667848829/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/252984_0_qsrtau.png',
-    id: 46,
-    quantity: 50
-  },
-  {
-    external_id: '47',
-    name: 'realme Pad Mini Wi-Fi + 4G Android Tablet (8.7 Inch, 4GB RAM, 64GB ROM, Blue)',
-    description: 'realme Pad Mini Wi-Fi + 4G Android Tablet (8.7 Inch, 4GB RAM, 64GB ROM, Blue)',
-    price: 14999,
-    rating: 5,
-    offer: '38%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667848781/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/252983_0_jx3ksk.png',
-    id: 47,
-    quantity: 50
-  },
-  {
-    external_id: '48',
-    name: 'realme PAD X Wi-Fi + 5G Android Tablet (10.95 Inch, 4GB RAM, 64GB ROM, Glowing Grey)',
-    description: 'realme PAD X Wi-Fi + 5G Android Tablet (10.95 Inch, 4GB RAM, 64GB ROM, Glowing Grey)',
-    price: 25999,
-    rating: 4.9,
-    offer: '35%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667852849/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/260078_0_wmbjbi.png',
-    id: 48,
-    quantity: 50
-  },
-  {
-    external_id: '49',
-    name: 'SAMSUNG Galaxy Tab A8 Wi-Fi + 4G Android Tablet (10.5 Inch, 3GB RAM, 32GB ROM, Pink Gold)',
-    description: 'SAMSUNG Galaxy Tab A8 Wi-Fi + 4G Android Tablet (10.5 Inch, 3GB RAM, 32GB ROM, Pink Gold)',
-    price: 18619,
-    rating: 0,
-    offer: '29%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667854675/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/247592_0_hsftw6.png',
-    id: 49,
-    quantity: 50
-  },
-  {
-    external_id: '50',
-    name: 'Lenovo Tab K10 Wi-Fi Android Tablet (10.3 Inch, 4GB RAM, 64GB ROM, Abyss Blue)',
-    description: 'Lenovo Tab K10 Wi-Fi Android Tablet (10.3 Inch, 4GB RAM, 64GB ROM, Abyss Blue)',
-    price: 15490,
-    rating: 4.7,
-    offer: '45%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667850943/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/249484_0_jyr8ll.png',
-    id: 50,
-    quantity: 50
-  },
-  {
-    external_id: '51',
-    name: 'Apple iPad 10th Generation Wi-Fi (10.9 Inch, 256GB, Silver, 2022 model)',
-    description: 'Apple iPad 10th Generation Wi-Fi (10.9 Inch, 256GB, Silver, 2022 model)',
-    price: 57490,
-    rating: 0,
-    offer: '4%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1666326437/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/264264_lu1ibf.png',
-    id: 51,
-    quantity: 50
-  },
-  {
-    external_id: '52',
-    name: 'I KALL N18 Wi-Fi + 4G VoLTE Android Tablet (10 Inch, 3GB RAM, 32GB ROM, Black)',
-    description: 'I KALL N18 Wi-Fi + 4G VoLTE Android Tablet (10 Inch, 3GB RAM, 32GB ROM, Black)',
-    price: 9119,
-    rating: 0,
-    offer: '17%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667849278/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/242926_0_re7egs.png',
-    id: 52,
-    quantity: 50
-  },
-  {
-    external_id: '53',
-    name: 'WishTel IRA Duo+ Wi-Fi + 4G Android Tablet (10 Inch, 4GB RAM, 64GB ROM, Black)',
-    description: 'WishTel IRA Duo+ Wi-Fi + 4G Android Tablet (10 Inch, 4GB RAM, 64GB ROM, Black)',
-    price: 15499,
-    rating: 0,
-    offer: '23%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1667849844/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/260616_0_ru7sr2.png',
-    id: 53,
-    quantity: 50
-  },
-  {
-    external_id: '54',
-    name: 'Mi 5A 80 cm (32 inch) HD Ready LED Smart Android TV with Google Assistance (2022 model)',
-    description: 'Mi 5A 80 cm (32 inch) HD Ready LED Smart Android TV with Google Assistance (2022 model)',
-    price: 12999,
-    rating: 0,
-    offer: '48%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1680244471/Croma%20Assets/Entertainment/Television/Images/259207_ej0hbk.png',
-    id: 54,
-    quantity: 50
-  },
-  {
-    external_id: '55',
-    name: 'Croma 127 cm (50 inch) 4K Ultra HD LED Smart WebOS TV (2022 model)',
-    description: 'Croma 127 cm (50 inch) 4K Ultra HD LED Smart WebOS TV (2022 model)',
-    price: 25990,
-    rating: 4.5,
-    offer: '57%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664411764/Croma%20Assets/Entertainment/Television/Images/251388_0_hz5pqn.png',
-    id: 55,
-    quantity: 50
-  },
-  {
-    external_id: '56',
-    name: 'realme 108 cm (43 inch) 4K Ultra HD LED Android TV with Google Assistant (2021 model)',
-    description: 'realme 108 cm (43 inch) 4K Ultra HD LED Android TV with Google Assistant (2021 model)',
-    price: 25999,
-    rating: 4,
-    offer: '21%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664418734/Croma%20Assets/Entertainment/Television/Images/252954_0_aznhar.png',
-    id: 56,
-    quantity: 50
-  },
-  {
-    external_id: '57',
-    name: 'Acer I Series 126 cm (50 inch) 4K Ultra HD LED Android TV with Google Assistant (2022 model)',
-    description: 'AcerI Series 126 cm (50 inch) 4K Ultra HD LED Android TV with Google Assistant (2022 model)',
-    price: 27999,
-    rating: 4.4,
-    offer: '32%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1665474073/Croma%20Assets/Entertainment/Television/Images/255844_pjcf8k.png',
-    id: 57,
-    quantity: 50
-  },
-  {
-    external_id: '58',
-    name: 'iFFALCON 79.97 cm (32 inch) HD Ready LED Smart Android TV with Dynamic Picture Mode',
-    description: 'iFFALCON 79.97 cm (32 inch) HD Ready LED Smart Android TV with Dynamic Picture Mode',
-    price: 11630,
-    rating: 5,
-    offer: '60%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664416661/Croma%20Assets/Entertainment/Television/Images/248623_0_iwatzh.png',
-    id: 58,
-    quantity: 50
-  },
-  {
-    external_id: '59',
-    name: 'Apple iPhone 12 Mini (64GB, Red)',
-    description: 'Apple iPhone 12 Mini (64GB, Red)',
-    price: 59900,
-    rating: 4.1,
-    offer: '0%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425819/Croma%20Assets/Communication/Mobiles/Images/229936_shx8xa.png',
-    id: 59,
-    quantity: 50
-  },
-  {
-    external_id: '60',
-    name: 'Apple iPhone 12 Mini (64GB, Black)',
-    description: 'Apple iPhone 12 Mini (64GB, Black)',
-    price: 53990,
-    rating: 4.7,
-    offer: '10%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425768/Croma%20Assets/Communication/Mobiles/Images/229934_tgfkji.png',
-    id: 60,
-    quantity: 50
-  },
-  {
-    external_id: '61',
-    name: 'Apple iPhone 12 Mini (64GB, Blue)',
-    description: 'Apple iPhone 12 Mini (64GB, Blue)',
-    price: 52910,
-    rating: 4.7,
-    offer: '12%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425732/Croma%20Assets/Communication/Mobiles/Images/229937_luztsn.png',
-    id: 61,
-    quantity: 50
-  },
-  {
-    external_id: '62',
-    name: 'Apple iPhone 12 Mini (64GB, White)',
-    description: 'Apple iPhone 12 Mini (64GB, White)',
-    price: 52910,
-    rating: 4.7,
-    offer: '12%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425837/Croma%20Assets/Communication/Mobiles/Images/229935_tdaz1v.png',
-    id: 62,
-    quantity: 50
-  },
-  {
-    external_id: '63',
-    name: 'Apple iPhone 12 Mini (128GB, Red)',
-    description: 'Apple iPhone 12 Mini (128GB, Red)',
-    price: 58490,
-    rating: 4.7,
-    offer: '10%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425868/Croma%20Assets/Communication/Mobiles/Images/229941_eifl3p.png',
-    id: 63,
-    quantity: 50
-  },
-  {
-    external_id: '64',
-    name: 'Apple iPhone 12 Mini (128GB, White)',
-    description: 'Apple iPhone 12 Mini (128GB, White)',
-    price: 58490,
-    rating: 4.5,
-    offer: '10%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1662425886/Croma%20Assets/Communication/Mobiles/Images/229940_egwayy.png',
-    id: 64,
-    quantity: 50
-  },
-  {
-    external_id: '65',
-    name: 'SAMSUNG Stylish Grande 192 Litres 3 Star Direct Cool Single Door Refrigerator with Stabilizer Free Operation (RR20R1Y2YS8/HL, Elegant Inox)',
-    description: 'SAMSUNG StylishGrande 192 Litres 3 Star Direct Cool Single Door Refrigerator with Stabilizer Free Operation (RR20R1Y2YS8/HL, Elegant Inox)',
-    price: 14494,
-    rating: 4.8,
-    offer: '19%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1673261280/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231745_0_x7s38o.png',
-    id: 65,
-    quantity: 50
-  },
-  {
-    external_id: '66',
-    name: 'Candy 170 Litres 2 Star Direct Cool Single Door Refrigerator with Diamond Edge Freezing Technology (CDSD522170MS, Moon Silver)',
-    description: 'Candy 170 Litres 2 Star Direct Cool Single Door Refrigerator with Diamond Edge Freezing Technology (CDSD522170MS, Moon Silver)',
-    price: 10494,
-    rating: 3,
-    offer: '13%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1673261834/Croma%20Assets/Large%20Appliances/Refrigerator/Images/248044_0_swv3tq.png',
-    id: 66,
-    quantity: 50
-  },
-  {
-    external_id: '67',
-    name: 'Whirlpool Protton 240 Litres Frost Free Triple Door Refrigerator with 6th Sense ActiveFresh Technology (20807, Alpha Steel)',
-    description: 'Whirlpool Protton 240 Litres Frost Free Triple Door Refrigerator with 6th Sense ActiveFresh Technology (20807, Alpha Steel)',
-    price: 26990,
-    rating: 4.3,
-    offer: '24%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1673263376/Croma%20Assets/Large%20Appliances/Refrigerator/Images/207475_0_vcmma7.png',
-    id: 67,
-    quantity: 50
-  },
-  {
-    external_id: '68',
-    name: 'LG 260 Litres 2 Star Frost Free Double Door Refrigerator with Multi Air Flow System (GL-N292DDSY.ADSZEB, Dazzle Steel)',
-    description: 'LG 260 Litres 2 Star Frost Free Double Door Refrigerator with Multi Air Flow System (GL-N292DDSY.ADSZEB, Dazzle Steel)',
-    price: 25990,
-    rating: 4.6,
-    offer: '16%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1673264279/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217088_0_gyodcg.png',
-    id: 68,
-    quantity: 50
-  },
-  {
-    external_id: '69',
-    name: 'LG 260 Litres 2 Star Frost Free Double Door Convertible Refrigerator with Multi Air Flow System (GL-S292RPZY.APZZEB, Shiny Steel)',
-    description: 'LG 260 Litres 2 Star Frost Free Double Door Convertible Refrigerator with Multi Air Flow System (GL-S292RPZY.APZZEB, Shiny Steel)',
-    price: 26990,
-    rating: 4.4,
-    offer: '22%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1673263461/Croma%20Assets/Large%20Appliances/Refrigerator/Images/224939_0_kx1cil.png',
-    id: 69,
-    quantity: 50
-  },
-  {
-    external_id: '70',
-    name: 'Noise ColorFit Pro 4 Smartwatch with Bluetooth Calling (43.68mm TFT LCD Display, IP68 Water Resistant, Charcoal Black Strap)',
-    description: 'Noise ColorFit Pro 4 Smartwatch with Bluetooth Calling (43.68mm TFT LCD Display, IP68 Water Resistant, Charcoal Black Strap)',
-    price: 2499,
-    rating: 4.7,
-    offer: '58%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675186956/Croma%20Assets/Communication/Wearable%20Devices/Images/257235_0_nqv6gl.png',
-    id: 70,
-    quantity: 50
-  },
-  {
-    external_id: '71',
-    name: 'Fire-Boltt Ring 3 BSW043 Smartwatch with Bluetooth Calling (45mm HD Display, IP67 Water Resistant, Black Strap)',
-    description: 'Fire-Boltt Ring 3 BSW043 Smartwatch with Bluetooth Calling (45mm HD Display, IP67 Water Resistant, Black Strap)',
-    price: 1999,
-    rating: 4.7,
-    offer: '80%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675180032/Croma%20Assets/Communication/Wearable%20Devices/Images/257342_0_dbp4go.png',
-    id: 71,
-    quantity: 50
-  },
-  {
-    external_id: '72',
-    name: 'Fire-Boltt Ring BSW005 Smart Watch (Bluetooth, 43.18mm) (Blood Oxygen Monitoring, 05BSWAAY#1, Black, Silicon Band)',
-    description: 'Fire-Boltt Ring BSW005 Smart Watch (Bluetooth, 43.18mm) (Blood Oxygen Monitoring, 05BSWAAY#1, Black, Silicon Band)',
-    price: 1959,
-    rating: 4.5,
-    offer: '80%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1682316245/Croma%20Assets/Wearable/Wearable%20Devices/Images/244250_e3v5vs.png',
-    id: 72,
-    quantity: 50
-  },
-  {
-    external_id: '73',
-    name: 'Fire-Boltt Ring Smart Watch (Bluetooth, 43.18mm) (Blood Oxygen Monitoring, 05BSWAAY#2, Black/Blue, Silicon Band)',
-    description: 'Fire-Boltt Ring Smart Watch (Bluetooth, 43.18mm) (Blood Oxygen Monitoring, 05BSWAAY#2, Black/Blue, Silicon Band)',
-    price: 1999,
-    rating: 4.5,
-    offer: '80%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1669709247/Croma%20Assets/Wearable/Wearable%20Devices/Images/244251_zogcfe.png',
-    id: 73,
-    quantity: 50
-  },
-  {
-    external_id: '74',
-    name: 'Dizo by realme TechLife Watch S DW2122 Smartwatch with Health Monitoring (40mm TFT Display, Water Resistant, Pink Strap)',
-    description: 'Dizo by realme TechLife Watch S DW2122 Smartwatch with Health Monitoring (40mm TFT Display, Water Resistant, Pink Strap)',
-    price: 1194,
-    rating: 5,
-    offer: '70%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675179188/Croma%20Assets/Communication/Wearable%20Devices/Images/256690_0_dfrgxs.png',
-    id: 74,
-    quantity: 50
-  },
-  {
-    external_id: '75',
-    name: 'Noise ColorFit Qube Plus Smart Watch (Bluetooth, 35mm) (IP68 Waterproof, wrb-sw-colorfitqub, Charcoal Black, Buckle Strap)',
-    description: 'Noise ColorFit Qube Plus Smart Watch (Bluetooth, 35mm) (IP68 Waterproof, wrb-sw-colorfitqub, Charcoal Black, Buckle Strap)',
-    price: 1499,
-    rating: 4.8,
-    offer: '70%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1668269637/Croma%20Assets/Communication/Wearable%20Devices/Images/256308_0_qpfmlz.png',
-    id: 75,
-    quantity: 50
-  },
-  {
-    external_id: '76',
-    name: 'Noise ColorFit Pro 4 Max Smartwatch with Bluetooth Calling (45.72mm TFT Display, IP68 Water Resistant, Rose Gold Strap)',
-    description: 'Noise ColorFit Pro 4 Max Smartwatch with Bluetooth Calling (45.72mm TFT Display, IP68 Water Resistant, Rose Gold Strap)',
-    price: 3799,
-    rating: 5,
-    offer: '37%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675187816/Croma%20Assets/Communication/Wearable%20Devices/Images/257233_0_ebbgqd.png',
-    id: 76,
-    quantity: 50
-  },
-  {
-    external_id: '77',
-    name: 'Noise ColorFit Pro 3 Alpha Smartwatch with Bluetooth Calling (42.92mm TFT Display, 5ATM Water Resistant, Jet Black Strap)',
-    description: 'Noise ColorFit Pro 3 Alpha Smartwatch with Bluetooth Calling (42.92mm TFT Display, 5ATM Water Resistant, Jet Black Strap)',
-    price: 5999,
-    rating: 5,
-    offer: '33%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675176525/Croma%20Assets/Communication/Wearable%20Devices/Images/250288_0_on5ed2.png',
-    id: 77,
-    quantity: 50
-  },
-  {
-    external_id: '78',
-    name: 'Noise ColorFit Brio Smartwatch with Activity Tracker (38.6mm LCD Display, IP68 Waterproof, Jet Black Strap)',
-    description: 'Noise ColorFit Brio Smartwatch with Activity Tracker (38.6mm LCD Display, IP68 Waterproof, Jet Black Strap)',
-    price: 1763,
-    rating: 4.8,
-    offer: '71%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1675184274/Croma%20Assets/Communication/Wearable%20Devices/Images/245808_0_ycxazl.png',
-    id: 78,
-    quantity: 50
-  },
-  {
-    external_id: '79',
-    name: 'Seagate Expansion 1TB USB 3.0 Hard Disk Drive (Portable Design, STKM1000400, Black)',
-    description: 'Seagate Expansion 1TB USB 3.0 Hard Disk Drive (Portable Design, STKM1000400, Black)',
-    price: 4349,
-    rating: 4.5,
-    offer: '24%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1663680732/Croma%20Assets/Computers%20Peripherals/Storage%20Devices/Images/237713_y5df7u.png',
-    id: 79,
-    quantity: 50
-  },
-  {
-    external_id: '80',
-    name: 'Aristocrat AMP Polyester Laptop Backpack for 17 Inch Laptop (26 L, Foam Padded Grab Handle, Blue)',
-    description: 'Aristocrat AMP Polyester Laptop Backpack for 17 Inch Laptop (26 L, Foam Padded Grab Handle, Blue)',
-    price: 783,
-    rating: 0,
-    offer: '63%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681400643/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/251383_0_lgedkn.png',
-    id: 80,
-    quantity: 50
-  },
-  {
-    external_id: '81',
-    name: 'HP 680 Original Advantage Ink Cartridge (889296532194N, Black)',
-    description: 'HP 680 Original Advantage Ink Cartridge (889296532194N, Black)',
-    price: 852,
-    rating: 4.8,
-    offer: '4%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1646391325/Croma%20Assets/Computers%20Peripherals/Toners%20and%20Ink%20Cartridges/Images/249039_addmba.png',
-    id: 81,
-    quantity: 50
-  },
-  {
-    external_id: '82',
-    name: 'HP 250 Wireless Optical Mouse (1600 DPI, Carefully Designed Side Grip, Black)',
-    description: 'HP 250 Wireless Optical Mouse (1600 DPI, Carefully Designed Side Grip, Black)',
-    price: 699,
-    rating: 4.6,
-    offer: '30%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681410243/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/231430_0_lvjwnq.png',
-    id: 82,
-    quantity: 50
-  },
-  {
-    external_id: '83',
-    name: 'Aristocrat AMP Polyester Laptop Backpack for 17 Inch Laptop (26 L, Foam Padded Grab Handle, Black)',
-    description: 'Aristocrat AMP Polyester Laptop Backpack for 17 Inch Laptop (26 L, Foam Padded Grab Handle, Black)',
-    price: 783,
-    rating: 0,
-    offer: '63%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681400666/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/251384_0_qdwm9t.png',
-    id: 83,
-    quantity: 50
-  },
-  {
-    external_id: '84',
-    name: 'HP DeskJet 2729 Wireless Color All-in-One Inkjet Printer (Mobile Printing Capability, 7FR54D, Tera Cotta)',
-    description: 'HP DeskJet 2729 Wireless Color All-in-One Inkjet Printer (Mobile Printing Capability, 7FR54D, Tera Cotta)',
-    price: 5999,
-    rating: 4.6,
-    offer: '14%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1643281752/Croma%20Assets/Computers%20Peripherals/Printers%20and%20Scanners/Images/247631_dcaanb.png',
-    id: 84,
-    quantity: 50
-  },
-  {
-    external_id: '85',
-    name: 'Sandisk Cruzer Blade 32GB USB 2.0 Flash Drive (SDCZ50-032G-B35 | Red/Black)',
-    description: 'Sandisk Cruzer Blade 32GB USB 2.0 Flash Drive (SDCZ50-032G-B35 | Red/Black)',
-    price: 293,
-    rating: 4.5,
-    offer: '55%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1605181858/Croma%20Assets/Computers%20Peripherals/Storage%20Devices/Images/8985568739358.png',
-    id: 85,
-    quantity: 50
-  },
-  {
-    external_id: '86',
-    name: 'logitech M186 Wireless Optical Mouse (1000 DPI, Smooth Cursor Control, Black)',
-    description: 'logitech M186 Wireless Optical Mouse (1000 DPI, Smooth Cursor Control, Black)',
-    price: 499,
-    rating: 3.9,
-    offer: '58%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1681402952/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/252054_0_gknwwu.png',
-    id: 86,
-    quantity: 50
-  },
-  {
-    external_id: '87',
-    name: 'Western Digital Elements 1.5 TB External Hard Disk (WDBU6Y0015BBK-WESN, Black)',
-    description: 'Western Digital Elements 1.5 TB External Hard Disk (WDBU6Y0015BBK-WESN, Black)',
-    price: 4549,
-    rating: 4.5,
-    offer: '25%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1605266938/Croma%20Assets/Computers%20Peripherals/Storage%20Devices/Images/8984562401310.png',
-    id: 87,
-    quantity: 50
-  },
-  {
-    external_id: '88',
-    name: 'Canon Ink Cart GI-790 Ink Bottle (0671C003AF, Black)',
-    description: 'Canon Ink Cart GI-790 Ink Bottle (0671C003AF, Black)',
-    price: 539,
-    rating: 5,
-    offer: '4%',
-    numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1643355591/Croma%20Assets/Computers%20Peripherals/Toners%20and%20Ink%20Cartridges/Images/247650_jmnek3.png',
-    id: 88,
-    quantity: 50
+    quantity: 50,
+    filter: "festival_deal"
   }
 ]
 
