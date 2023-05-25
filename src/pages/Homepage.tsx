@@ -7,7 +7,7 @@ const Homepage: React.FC = () => {
   return (
     <div>
       <NavBar/>
-      <Products filter={"25% Off"}/>
+      <Products/>
     </div>
   );
 };

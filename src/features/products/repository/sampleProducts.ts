@@ -9,7 +9,7 @@ const products: productFetchResponse[] = [
     rating: 4.4,
     offer: '71%',
     numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664429797/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247655_0_ixj0ae.png',
+    img: 'https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg',
     id: 0,
     quantity: 50,
     filter: "normal_deal"
@@ -22,7 +22,7 @@ const products: productFetchResponse[] = [
     rating: 4.8,
     offer: '22%',
     numberOfRatings: 200,
-    img: 'https://media.croma.com/image/upload/v1664409740/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/257082_0_klwmql.png',
+    img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjYm9vayUyMHByb3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
     id: 1,
     quantity: 50,
     filter: "normal_deal"

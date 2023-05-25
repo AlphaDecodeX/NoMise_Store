@@ -6,13 +6,28 @@ interface Props {
 
 const Specifications: React.FC<Props> = ({ specifications }) => {
   return (
-    <div className="bg-white shadow-md rounded my-6">
-      <table className="text-left w-full border-collapse">
+    <div className="relative overflow-x-auto">
+      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+            <th scope="col" className="px-6 py-3">
+              Keys 
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Values
+            </th>
+          </tr>
+        </thead>
         <tbody>
           {Object.entries(specifications).map(([key, value]) => (
             <tr key={key} className="border-b">
-              <td className="py-4 px-6 border-l border-gray-200">{key}</td>
-              <td className="py-4 px-6 border-l border-gray-200">{value}</td>
+              <td
+                scope="row"
+                className="px-6 py-4 font-medium text-white-900 whitespace-nowrap dark:text-white"
+              >
+                {key}
+              </td>
+              <td className="px-6 py-4">{value}</td>
             </tr>
           ))}
         </tbody>
