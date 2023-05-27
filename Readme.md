@@ -41,9 +41,8 @@ This project has been started while keeping beginners in focus. You will receive
 - [Join our Small Focused Group](https://chat.whatsapp.com/B7CwSOLkl8wIzLMn8GRNst)
 - Contribute to Backend:-
   - [Inventory Service](https://github.com/AlphaDecodeX/nomise_inventory)
- 
-## Setting up the Project Locally
 
+## Setting up the Project Locally
 
 To run the project locally, follow these steps:
 
@@ -64,14 +63,14 @@ cd NoMise
 3. Install the project dependencies:
 
 ```bash
-npm install
+pnpm i
 
 ```
 
 4. Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 
 ```
 
