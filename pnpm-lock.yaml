@@ -25,6 +25,9 @@ importers:
       flowbite-react:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.2)
+      pnpm:
+        specifier: ^8.5.1
+        version: 8.5.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -1778,6 +1781,12 @@ packages:
   /pirates@4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
+
+  /pnpm@8.5.1:
+    resolution: {integrity: sha512-W6elL7Nww0a/MCICkzpkbxW6f99TQuX4DuJoDjWp39X08PKDkEpg4cgj3d6EtgYADcdQWl/eM8NdlLJVE3RgpA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-cli@10.1.0(postcss@8.4.23):
     resolution: {integrity: sha512-Zu7PLORkE9YwNdvOeOVKPmWghprOtjFQU3srMUGbdz3pHJiFh7yZ4geiZFMkjMfB0mtTFR3h8RemR62rPkbOPA==}
