@@ -8,17 +8,23 @@ const Products: React.FC = () => {
   const [products, setProducts] = useState<Map<string, productFetchResponse[]>>(
     new Map()
   );
-  let productService: ProductService = new ProductService();
+  const productService: ProductService = new ProductService();
+
   useEffect(() => {
-    const productsToShow: Map<string, productFetchResponse[]> = new Map();
-    filterTypes.forEach((filter) =>
-      productsToShow.set(
-        filter.name,
-        productService.fetchProductByFilterType(filter.name)
-      )
-    );
-    setProducts(productsToShow);
+    async function getProducts() {
+      for (const filter of filterTypes) {
+        try {
+          const response = await productService.fetchProductByFilterType(filter.name);
+          setProducts((prevProducts) => new Map(prevProducts).set(filter.name, response));
+        } catch (error) {
+          console.log(`Error fetching products for filter ${filter.name}:`, error);
+        }
+      }
+    }
+
+    getProducts();
   }, []);
+  
 
   return (
     <div className="flex-wrap whitespace-nowrap p-4">
@@ -35,9 +41,9 @@ const Products: React.FC = () => {
               <ProductCard
                 key={product.id}
                 name={product.name}
-                offer={product.offer}
+                offerId={product.offerId}
                 img={product.img}
-                external_id={product.external_id}
+                externalId={product.externalId}
                 id={product.id}
                 price={product.price}
                 rating={product.rating}

@@ -16,15 +16,23 @@ const Product: React.FC = () => {
   );
   const cartService: CartService = new CartService();
 
-  useEffect(() => {
+useEffect(() => {
+  const getProductByExternalId = async () => {
+    let product: productFetchResponse | null = null;
     if (externalId) {
-      const product: productFetchResponse = productService.fetchProductByExternalId(
-        externalId
-      )[0];
-      setProductToShow(product);
-      console.log("Product is ", product);
+      try {
+        product = await productService.fetchProductByExternalId(externalId);
+        setProductToShow(product);
+      } catch (error) {
+        console.error("Error fetching product by external ID:", error);
+      }
     }
-  }, [externalId, productService]);
+  };
+
+  getProductByExternalId();
+}, [externalId, productService]);
+
+
 
   const specifications = {
     "Dimensions": "10 x 20 x 5 cm",
@@ -60,7 +68,7 @@ const Product: React.FC = () => {
               {productToShow.description}
             </p>
             <span className="text-green-500 text-lg mb-4">
-              {productToShow.offer}
+              {productToShow.offerId}
             </span>
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
               {productToShow.price}

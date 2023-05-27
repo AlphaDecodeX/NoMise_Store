@@ -1,35 +1,49 @@
-import products from "../repository/sampleProducts";
-import productFetchResponse from "../utils/productResponse";
+import axios from 'axios';
+import products from '../repository/sampleProducts';
+import productFetchResponse from '../utils/productResponse';
 
 class ProductService {
-    productService() {}
-    
-    fetchAllProducts(){
-        return products; 
-    }
-    
-    fetchProductByFilter(filter?: string): productFetchResponse[] {
-        // if(filter){
-        //     return products.filter(p => p.offer === filter);
-        // }
-        return products;
-    }
+  async fetchAllProducts() {
+    // Make a GET request to the getAllProducts endpoint
+    const response = await axios.get('http://localhost:7777/inventory/v1/products');
+    return response.data;
+  }
 
-    fetchProductByExternalId(externalId: string){
-        return products.filter(p => p.external_id === externalId); 
-    }
+  async fetchProductsByOfferId(offerId: string) {
+    // Make a GET request to the Get Products By Offer Id endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/${offerId}`);
+    return response.data;
+  }
 
-    fetchProductById(id: number){
-        return products.filter(p => p.id === id);
-    }
+  async fetchProductsByCategory(category: string) {
+    // Make a GET request to the Get Products By Category endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/category/${category}`);
+    return response.data;
+  }
 
-    fetchProductByName(name: string): productFetchResponse{
-        return products.filter(p => p.name == name)[0];
-    }
+  async fetchProductByExternalId(externalId: string) {
+    // Make a GET request to the Get Products By External Id endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/external/${externalId}`);
+    return response.data;
+  }
 
-    fetchProductByFilterType(filter: string): productFetchResponse[]{
-        return products.filter(p => p.filter == filter);
-    }
+  async fetchProductById(id: number) {
+    // Make a GET request to the Get Product By Id endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/${id}`);
+    return response.data;
+  }
+
+  async fetchProductByName(name: string) {
+    // Make a GET request to the Get Products By Name endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/products?name=${name}`);
+    return response.data[0];
+  }
+
+  async fetchProductByFilterType(filter: string) {
+    // Make a GET request to the Get Products By Filter Type endpoint
+    const response = await axios.get(`http://localhost:7777/inventory/v1/filter/${filter}`);
+    return response.data;
+  }
 }
 
-export {ProductService}
+export { ProductService };
