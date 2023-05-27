@@ -60,7 +60,7 @@ cd NoMise
 
 ```
 
-3. Install the project dependencies:
+3. Install the project dependencies (Make sure you have pnpm installed in your OS):
 
 ```bash
 pnpm i
