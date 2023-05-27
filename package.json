@@ -6,23 +6,24 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.1",
     "flowbite": "^1.6.5",
-    "flowbite-react": "^0.4.4",
+    "flowbite-react": "^0.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.9.0",
+    "react-router-dom": "^6.11.2",
     "redux": "^4.2.1",
-    "web-vitals": "^2.1.4",
+    "web-vitals": "^3.3.1",
     "yarn": "^1.22.19"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm"
   },
   "eslintConfig": {
     "extends": [
@@ -43,16 +44,16 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react": "^3.0.0",
-    "autoprefixer": "^10.4.13",
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
     "jsonfile": "^6.1.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.2.7",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0"
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
   }
 }
