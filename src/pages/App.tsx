@@ -4,6 +4,7 @@ import Product from '../features/product/components/Product';
 import Homepage from './Homepage';
 import Cart from '../features/cart/components/Cart';
 import "./global.css"
+import PageNotFound from '../components/PageNotFound';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Homepage/>} />
         <Route path="/product/:externalId" element={<Product />} />
+        <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </div>
   );
