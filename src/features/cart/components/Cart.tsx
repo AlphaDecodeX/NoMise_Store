@@ -4,10 +4,8 @@ import productFetchResponse from "../../products/utils/productResponse";
 import { CartService } from "../services/cartService";
 import "./Cart.css";
 import { ProductService } from "../../products/services/ProductService";
-import { useLocation } from "react-router-dom";
 
 const Cart: React.FC = () => {
-  const location = useLocation();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const cartItemsFromRedux = useSelector((state: any) => state.cart.cartItems);
   const [cartItems, setCartItems] = useState<productFetchResponse[]>([]);
