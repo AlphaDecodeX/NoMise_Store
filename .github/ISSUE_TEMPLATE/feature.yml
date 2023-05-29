@@ -1,0 +1,27 @@
+name: ✨ Feature Request
+description: Suggest a feature request
+title: '[Feat]: '
+labels: ['⭐ goal: addition', '🚦status: awaiting triage']
+body:
+  - type: textarea
+    id: what-feature
+    attributes:
+      label: What feature?
+      placeholder: Add descriptions
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Add screenshots
+      placeholder: Add screenshots
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
