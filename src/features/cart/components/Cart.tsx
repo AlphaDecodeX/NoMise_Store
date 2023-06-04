@@ -52,6 +52,7 @@ const Cart: React.FC = () => {
           </span>
         ) : null}
       </div>
+
       <button
         onClick={toggleCart}
         className="medium-shadow bg-gray-800 text-white px-2 py-2 rounded-full"
@@ -59,8 +60,10 @@ const Cart: React.FC = () => {
         <img
           className="cart-image"
           src="https://www.citypng.com/public/uploads/preview/hd-shopping-cart-white-logo-icon-transparent-png-11640441682ecem2ohejv.png"
+          alt="Cart"
         />
       </button>
+
       {isCartOpen && (
         <div className="absolute bottom-10 right-0 w-80 bg-white p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Cart</h2>
