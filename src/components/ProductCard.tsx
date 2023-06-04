@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-300">
+            <h5 className="mb-2 text-2xl font-light tracking-tight text-gray-300">
               {name.length > 20 ? name.substring(0, 20) + "..." : name}
             </h5>
           </a>
