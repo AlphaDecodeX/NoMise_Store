@@ -1,4 +1,4 @@
-![NoMise](https://github.com/AlphaDecodeX/NoMise_Store/assets/91979252/59bec95c-cc46-40e1-bee6-463a5ff397db)
+![NoMise](/assets/nomise-logo.png)
 
 # NoMise: Your Customizable E-Commerce Store
 
@@ -13,6 +13,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Usage](#usage)
+- [Run on local machine](#run-on-local-machine)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -32,6 +33,51 @@ You can use this product as your E-Commerce Store where you'll get a lot of feat
 - Admin dashboard (track your sales)
 - Payment integration
 - Catalogue and videos feature and more....
+
+## Run on local machine
+
+### Dependencies
+
+To get started with the AlphaDecodeX/NoMise_Store project, please make sure you have the following installed on your system.
+- [Node.js](https://nodejs.org) (v12 or higher)
+- [pnpm](https://pnpm.io/installation) (v6 or higher)
+
+To check whether Node.js and pnpm is installed in your system, run the following commands in your terminal or command line.
+```sh
+$ node --version
+$ pnpm --version
+```  
+
+* If node/pnpm is already installed in your system, it will show the version number after you run the above commands. Please make sure you meet the version requirements.
+* If it doesn't show version number, you have to install it from the above [links.](#required)
+
+### Setup
+Once you have the dependencies installed, you can follow these steps to run this project locally.
+
+1. Get the project to your local machine via cloning or downloading the project.
+  - Option 1:
+    -Clone this repository to your local machine
+    ```sh
+    $ git clone https://github.com/AlphaDecodeX/NoMise_Store.git
+    $ cd NoMise_Store
+    ```
+  - Option 2:
+    - Download source code from [this link](https://github.com/AlphaDecodeX/NoMise_Store/archive/refs/heads/master.zip)
+    - Extract the downloaded zip file
+    - Open a terminal from the extracted folder.
+
+2. Install the project dependencies inside the project folder.
+  ```sh
+  $ pnpm install
+  ```
+
+3. Start the development server
+  ```sh
+  $ pnpm dev
+  ```
+
+4. Open the url which is shown in the terminal. [http://localhost:5173](http://localhost:5173) in the following example
+    ![Development server](/assets/devServerScreenshot.jpg)
 
 ## Contributing
 
