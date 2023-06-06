@@ -71,8 +71,9 @@ When making code contributions, please keep the following guidelines in mind:
    git push origin feature/my-new-feature
    ```
 8. When your contribution is ready, open a pull request (PR) against the `main`
-
-branch of the main repository. Provide a clear title and description for your PR, explaining the changes made and the problem it solves. Reference any related issues or PRs, if applicable. 9. Engage in the conversation around your PR. Be responsive to feedback and make any requested changes. 10. Once the PR has been reviewed and approved, it will be merged into the main repository.
+branch of the main repository. Provide a clear title and description for your PR, explaining the changes made and the problem it solves. Reference any related issues or PRs, if applicable.
+9. Engage in the conversation around your PR. Be responsive to feedback and make any requested changes.
+10. Once the PR has been reviewed and approved, it will be merged into the main repository.
 
 ## Issue and Bug Reports
 
