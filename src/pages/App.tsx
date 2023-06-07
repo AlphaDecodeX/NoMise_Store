@@ -8,7 +8,7 @@ import PageNotFound from '../components/PageNotFound';
 
 const App: React.FC = () => {
   return (
-    <div className='bg-gray-900'>
+    <div>
       <Cart /> 
       <Routes>
         <Route path="/" element={<Homepage/>} />

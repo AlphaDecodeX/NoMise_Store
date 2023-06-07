@@ -22,20 +22,24 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <Link to={`/product/${external_id}`}>
-      <div className="card relative max-w-sm border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
-        <a href="#">
-          <img className="rounded-t-lg" src={img} alt={name} />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-light tracking-tight text-gray-300">
-              {name.length > 20 ? name.substring(0, 20) + "..." : name}
-            </h5>
-          </a>
-          <p className="card-discount">{offer} Off</p>
-          <div className="mb-3 font-normal text-gray-300 dark:text-gray-400 space-between">
-            <div>Rating: {rating}</div>
-            <div>Rs {price}/-</div>
+      <div
+        className="border-solid border-2 border-black relative"
+        id="card"
+      >
+        <div id="cardImage">
+          <img src={img} alt={name}/>
+        </div>
+        <div
+          id="label"
+          className="absolute top-0 right-0 p-2 bg-red-500 text-white"
+        >
+          <p>25% Off</p>
+        </div>
+        <div id="footer" className="bg-black text-white p-5">
+          <p>{name.length > 20 ? name.substring(0, 20) + "..." : name}</p>
+          <div id="ratingPrice" className="flex justify-between my-2">
+            <p>Rating: {rating}</p>
+            <p>Rs {price}/-</p>
           </div>
         </div>
       </div>
