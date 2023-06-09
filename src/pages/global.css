@@ -35,6 +35,16 @@ Flex
     justify-content: space-between;
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.max-height{
+    height: 100vh;
+}
+
 /* ##########
 Margin
 ########## */
@@ -48,6 +58,10 @@ Margin
 .m-l-15{
     margin-left: 15px;
 }
+.m-r-15{
+    margin-right: 15px;
+}
+
 
 .m-r-5{
     margin-right: 5px;
@@ -89,6 +103,9 @@ Padding
 }
 .p-t-5{
     padding-top: 5px;
+}
+.p-a-15{
+    padding:15px;
 }
 
 /* ###########
