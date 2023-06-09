@@ -25,8 +25,6 @@ const NavBar: React.FC = ()=>{
                     <i className="m-r-15 fa fa-user"></i>
                 </Link>
             </div>
-            
-            {/* <SearchBar className = {classForSearchBar}/> */}
         </div>
     );
 }
