@@ -1,6 +1,7 @@
 import React from 'react';
 import { Products } from '../features/products/components/Products';
 import NavBar from '../layouts/Navbar';
+import Footer from "../layouts/Footer"
 
 const Homepage: React.FC = () => {
 
@@ -8,6 +9,7 @@ const Homepage: React.FC = () => {
     <div>
       <NavBar/>
       <Products/>
+      <Footer/>
     </div>
   );
 };

@@ -6,15 +6,13 @@ import "./Navbar.css";
 const NavBar: React.FC = () => {
   const imageUrl: string = "../../assets/nomise-logo.png";
   return (
-    <div className="bg-black relative">
-       <div
-          id="logo"
-          className="flex justify-between items-center ml-5 mr-5 p-5"
-        >
-          <p className="text-white font-mono">NoMise</p>
-          <SearchBar />
-        </div>
-      </div>
+    <div className="bg-black flex flex-col items-center justify-center p-5">
+    <p className="text-white">All Copyrights reserved 2023</p>
+    <div className="text-white flex" id="socials">
+      <p>Twitter</p>
+      <p className="ml-5">Discord</p>
+    </div>
+  </div>
   );
 };
 

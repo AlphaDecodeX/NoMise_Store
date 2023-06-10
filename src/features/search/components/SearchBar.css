@@ -9,7 +9,15 @@
 }
 
 #dropdown{
-    height: 50%;
+    height: 500px;
+    width: 30%;
+    overflow: scroll;
+    position: absolute;
+    margin-top: 5px;
+}
+
+#dropdownEmpty{
+    height: 100px;
     width: 30%;
     overflow: scroll;
     position: absolute;

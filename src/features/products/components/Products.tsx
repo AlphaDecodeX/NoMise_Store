@@ -25,7 +25,7 @@ const Products: React.FC = () => {
     <div className="flex-wrap whitespace-nowrap p-4">
       {Array.from(products.entries()).map(([heading, productArr]) => (
         <div key={heading} className="mb-4 w-75 overflow-auto">
-          <h2 className="text-white text-lg font-semibold mb-2 ">
+          <h2 className="text-lg font-semibold mb-2 heading">
             {heading
               .split("_")
               .map((word) => word.charAt(0).toUpperCase() + word.slice(1))

@@ -6,9 +6,10 @@ import RatingStars from "../../ratings/components/RatingStars";
 import { RatingService } from "../../ratings/services/RatingService";
 import Specifications from "./Specifications";
 import { CartService } from "../../cart/services/cartService";
+import Reviews from "../../reviews/components/Reviews";
 
 const Product: React.FC = () => {
-  const { externalId } = useParams<{ externalId: string }>(); // Get the id parameter from the URL
+  const { externalId } = useParams<{ externalId: string }>();
   const ratingService: RatingService = new RatingService();
   const productService = new ProductService();
   const [productToShow, setProductToShow] =
@@ -38,43 +39,40 @@ const Product: React.FC = () => {
   };
 
   return (
-    <div className="h-[100vh]">
-      <div className="grid grid-cols-3 p-5">
-        <div className="col-span-2 m-5">
-          <div className="w-3/6 h-3/6">
-            <img src={productToShow?.img} alt="Product Image" />
-            {productToShow ? (
-              <RatingStars
-                value={productToShow?.numberOfRatings}
-                onChange={ratingService.ratingsChange}
-              />
-            ) : null}
+    <div id="product" className="sm:flex bg-black text-white">
+      <div id="productImage" className="mt-5 sm:w-1/2">
+        <img src={productToShow?.img} className="w-1/2" />
+        {productToShow ? (
+          <RatingStars
+            value={productToShow?.numberOfRatings}
+            onChange={ratingService.ratingsChange}
+          />
+        ) : null}
+        <Specifications specifications={specifications} />
+      </div>
+      {productToShow ? (
+        <div id="buyAddToCart" className="sm:w-1/2 ml-2 p-5">
+          <h2>{productToShow.name}</h2>
+          <p className="mt-2 mb-2">{productToShow.description}</p>
+          <div className="flex justify-between m-1">
+            <span className="text-green-500 text-lg mb-4">
+              {productToShow.offer}
+            </span>
+            <h3 className="text-3xl font-bold text-gray-500 mb-4">
+              Rs. {productToShow.price}/-
+            </h3>
           </div>
-        </div>
-        <div className="col-span-1 bg-gray-100 p-6 rounded-lg">
-          {productToShow ? (
-            <div>
-              <h1 className="text-3xl font-bold mb-4">{productToShow.name}</h1>
-              <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                {productToShow.description}
-              </p>
-              <span className="text-green-500 text-lg mb-4">
-                {productToShow.offer}
-              </span>
-              <h3 className="text-3xl font-bold text-gray-800 mb-4">
-                {productToShow.price}
-              </h3>
-            </div>
-          ) : null}
-          <div className="flex justify-between">
-            <button className="common-button">Buy Now</button>
-            <button className="inverted-button" onClick={addToCart}>
+          <div className="mb-5">
+            <button className="focus:outline-none rounded bg-indigo-500 text-white p-2">
+              Buy Now
+            </button>
+            <button className="focus:outline-none hover:bg-indigo-500 rounded bg-gray-500 text-white ml-2 p-2">
               Add to Cart
             </button>
           </div>
+          <Reviews/>
         </div>
-        <Specifications specifications={specifications} />
-      </div>
+      ) : null}
     </div>
   );
 };

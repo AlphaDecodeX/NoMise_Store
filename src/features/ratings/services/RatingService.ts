@@ -16,8 +16,8 @@ class RatingService{
         return product[0].rating;
     }
 
-    ratingsChange(productId: number, rating: number):void{
-    //     const data = jsonFile.readFileSync('data.json');
+    ratingsChange(productId: string | undefined, rating: number | null):void{
+        console.log("Ratings changed ", rating)
     }
 }
 
