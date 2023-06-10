@@ -100,4 +100,16 @@ SHADOWS
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.max-height{
+    height: 100vh;
+}
+
+.m-r-15{
+    margin-right: 15px;
+}
