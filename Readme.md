@@ -75,6 +75,17 @@ Once you have the dependencies installed, you can follow these steps to run this
   ```sh
   $ pnpm dev
   ```
+#Troubleshooting : (Error :running script is disabled on the system)
+```sh
+ 1.search for powershell.
+
+ 2.right click and run as administration.
+
+ 3.run this simple command Set-ExecutionPolicy RemoteSigned.
+
+ 4.Press A And Enter.
+
+```
 
 4. Open the url which is shown in the terminal. [http://localhost:5173](http://localhost:5173) in the following example
     ![Development server](/assets/devServerScreenshot.jpg)
