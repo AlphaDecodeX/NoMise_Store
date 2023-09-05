@@ -34,7 +34,7 @@ const Product: React.FC = () => {
 
   const addToCart = () => {
     if (productToShow) {
-      cartService.addProductToCart(productToShow);
+      cartService.addProductToCart({...productToShow, quantity: 1});
     }
   };
 
